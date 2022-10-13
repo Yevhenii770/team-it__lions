@@ -1,4 +1,11 @@
 .test {
   font-size: 50px;
-  color: tomato;
+  color: purple;
+  font-family: var(--secondary-fonts);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(45 / 36);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
