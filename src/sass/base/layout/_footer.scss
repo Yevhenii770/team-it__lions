@@ -1,0 +1,31 @@
+.footer {
+  background-color: var(--bac-color-green);
+}
+
+.footer-text__first {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+.footer-text__second {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: calc(41 / 34);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+.footer__text-lower {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(21 / 14);
+
+  color: var(--gray-color);
+}
