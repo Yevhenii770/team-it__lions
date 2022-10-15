@@ -11,11 +11,17 @@
 
 /**
   |============================
-  | components
+  | base
   |============================
 */
 @import './base/body';
 @import './base/container';
+
+/**
+  |============================
+  | components
+  |============================
+*/
 @import './components/slider';
 
 /**
