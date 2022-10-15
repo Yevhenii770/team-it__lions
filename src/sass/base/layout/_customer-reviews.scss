@@ -1,0 +1,56 @@
+.customer-reviews {
+  height: 0;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// .gallery {
+//   max-width: 767px;
+//   height: 940px;
+//   margin: 0 auto;
+//   background-image: url(../images/customer-reviews/ice-bg-mob_@1x.jpg);
+
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background-image: url(../images/customer-reviews/ice-bg-mob_@2x.jpg);
+//   }
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+
+//   @media screen and (min-width: 768px) {
+//     max-width: 1199px;
+//     height: 958px;
+//     background-image: url(../images/customer-reviews/ice-bg-tab_@1x.jpg);
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/customer-reviews/ice-bg-tab_@2x.jpg);
+//     }
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     max-width: 1600px;
+//     height: 1020px;
+//     background-image: url(../images/customer-reviews/ice-bg-desc_@1x.jpg);
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(../images/customer-reviews/ice-bg-desc_@2x.jpg);
+//     }
+//   }
+// }
