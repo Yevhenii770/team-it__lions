@@ -2,44 +2,38 @@
   background-color: var(--bac-color-green);
   padding-top: 39px;
   padding-bottom: 62px;
-}
 
-.footer-text__first {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(22 / 18);
-  text-transform: uppercase;
+  &__text-first {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    text-transform: uppercase;
 
-  color: var(--secondary-text-color);
-  margin-bottom: 16px;
-}
+    color: var(--secondary-text-color);
+    margin-bottom: 16px;
+  }
 
-.footer-text__second {
-  font-weight: 700;
-  font-size: 34px;
-  line-height: calc(41 / 34);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  &__text-second {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: calc(41 / 34);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 
-  color: var(--secondary-text-color);
-  margin-bottom: 42px;
-}
+    color: var(--secondary-text-color);
+    margin-bottom: 42px;
+  }
 
-.footer__text-lower {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(21 / 14);
+  &__text-lower {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(21 / 14);
 
-  color: var(--gray-color);
+    color: var(--gray-color);
 
-  text-align: center;
-}
-
-// Временно!
-.social__icon {
-  background-color: #fff;
-  border-radius: 50%;
+    text-align: center;
+  }
 }
 
 .footer__number {
@@ -61,21 +55,26 @@
 }
 
 .footer__num-text {
-  color: black;
+  color: var(--primary-text-color);
 }
 
-// .footer__text-lower {
-//   position: relative;
-// }
+// Line
+.footer__box {
+  position: relative;
+}
 
-// .footer__text-lower::before {
-//   content: ' ';
-//   background: #e1e1e1;
-//   width: 480px;
-//   height: 0.5px;
+.footer__box::before {
+  content: ' ';
+  position: absolute;
 
-//   bottom: 40px;
-//   left: 20px;
+  background: var(--secondary-text-color);
+  width: 100%;
+  height: 0.5px;
+  bottom: 62px;
+}
 
-//   position: absolute;
-// }
+// Временно!
+.social__icon {
+  background-color: #fff;
+  border-radius: 50%;
+}
