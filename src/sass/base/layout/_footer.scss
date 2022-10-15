@@ -1,5 +1,4 @@
 .footer {
-  background-color: var(--bac-color-green);
   padding-top: 40px;
   padding-bottom: 62px;
 
@@ -65,6 +64,10 @@
 
     text-align: center;
   }
+}
+
+.footer__all {
+  background-color: var(--bac-color-green);
 }
 
 .footer__number {
