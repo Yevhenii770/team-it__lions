@@ -1,0 +1,105 @@
+.advantages {
+  text-align: center;
+
+  &__wrap {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 60px;
+    padding-top: 45px;
+
+    background-color: var(--bac-color-green);
+
+    @media screen and (min-width: 768px) {
+      padding-left: 76px;
+      padding-right: 76px;
+      padding-bottom: 203px;
+      padding-top: 48px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 60px;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-bottom: 180px;
+    }
+  }
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+    }
+    @media screen and (min-width: 1200px) {
+      gap: 32px;
+    }
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 160px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 64px) / 3);
+    }
+  }
+
+  &__icon {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--secondary-text-color);
+
+    margin-bottom: 18px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: calc(59 / 48);
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      line-height: calc(71 / 58);
+    }
+  }
+
+  &__text {
+    font-family: Montserrat;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: calc(17 / 12);
+
+    color: var(--secondary-text-color);
+
+    @media screen and (min-width: 768px) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(17 / 14);
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+      line-height: calc(17 / 16);
+    }
+  }
+}
