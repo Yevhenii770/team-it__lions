@@ -1,0 +1,123 @@
+.modal {
+  width: 100%;
+
+  @media screen and(min-width:480px) {
+    width: 280px;
+  }
+}
+
+.strong__title {
+  margin-bottom: 83px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Seymour One';
+  font-size: 16px;
+  line-height: calc(24 / 16);
+}
+
+.products {
+  display: flex;
+  gap: 83px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.products__list {
+  width: 132px;
+  height: 136px;
+  text-align: center;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+  border-radius: 15.7808px;
+}
+
+.ice__cream {
+  border: 2px solid #96af8c;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+}
+
+.ice__coffee {
+  border: 2px solid #efd478;
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+}
+
+.milkshake {
+  border: 2px solid #d6936d;
+  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+}
+
+.products__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  bottom: 20px;
+}
+
+.modal {
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.input__modal {
+  width: 100%;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  height: 32px;
+  padding: 8px 48px 7px 12px;
+
+  &::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--primary-text-color);
+  }
+
+  @media screen and(min-width:480px) {
+    width: 224px;
+  }
+}
+
+.textarea__modal {
+  display: block;
+  width: 100%;
+  height: 64px;
+  outline: transparent;
+  resize: none;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  padding-left: 12px;
+  padding-top: 8px;
+
+  &::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--primary-text-color);
+  }
+
+  @media screen and(min-width:480px) {
+    width: 224px;
+  }
+}
+.btn__about__mod {
+  margin: 0 auto;
+  background: var(--btn-color);
+  border-radius: 10px;
+  border: none;
+  width: 114px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input__products {
+  margin-bottom: 12px;
+}
+
+.textarea__products {
+  margin-bottom: 24px;
+}
