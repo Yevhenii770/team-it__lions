@@ -1,10 +1,30 @@
 @import './common';
-@import './base/components/body';
+
+/**
+  |============================
+  | utils
+  |============================
+*/
+@import './base/utils/fonts';
 @import './base/utils/variables';
 @import './base/utils/reset';
+
+/**
+  |============================
+  | components
+  |============================
+*/
+@import './base/components/body';
 @import './base/components/container';
-@import './base/layout/hero';
+@import './base/components/slider';
+
+/**
+  |============================
+  | layouts
+  |============================
+*/
 @import './base/layout/header';
+@import './base/layout/hero';
 @import './base/layout/products';
 @import './base/layout/about';
 @import './base/layout/advantages';
