@@ -1,16 +1,33 @@
 .footer {
   background-color: var(--bac-color-green);
-  padding-top: 39px;
+  padding-top: 40px;
   padding-bottom: 62px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 13px;
+  }
 
   &__text-first {
     font-weight: 700;
     font-size: 18px;
     line-height: calc(22 / 18);
     text-transform: uppercase;
+    letter-spacing: 0.04em;
+
+    width: 244px;
 
     color: var(--secondary-text-color);
     margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: calc(32 / 26);
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+      line-height: calc(37 / 30);
+      width: 600px;
+    }
   }
 
   &__text-second {
@@ -21,7 +38,21 @@
     text-transform: uppercase;
 
     color: var(--secondary-text-color);
-    margin-bottom: 42px;
+    @media screen and (min-width: 480px) {
+      width: 200px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: calc(59 / 48);
+      letter-spacing: 0.06em;
+      width: 340px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      line-height: calc(71 / 58);
+      width: 600px;
+    }
   }
 
   &__text-lower {
@@ -44,13 +75,17 @@
 
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 56px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 
 .social__list {
   display: flex;
   justify-content: flex-end;
-  gap: 29px;
+  gap: 30px;
   margin-bottom: 38px;
 }
 
@@ -70,11 +105,29 @@
   background: var(--secondary-text-color);
   width: 100%;
   height: 0.5px;
-  bottom: 62px;
+  bottom: 32px;
 }
 
 // Временно!
 .social__icon {
   background-color: #fff;
   border-radius: 50%;
+}
+
+.footer-left {
+  @media screen and (min-width: 768px) {
+    width: 352px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__home-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+}
+
+.footer__social {
+  margin-bottom: 56px;
 }
