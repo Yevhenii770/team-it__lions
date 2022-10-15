@@ -1,8 +1,16 @@
 .modal {
   width: 100%;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 28px;
 
   @media screen and(min-width:480px) {
     width: 280px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 568px;
+    padding: 32px 54px;
+    margin: 0 auto;
   }
 }
 
@@ -13,6 +21,12 @@
   font-family: 'Seymour One';
   font-size: 16px;
   line-height: calc(24 / 16);
+
+  @media screen and(min-width:1200px) {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    margin-bottom: 103px;
+  }
 }
 
 .products {
@@ -21,6 +35,12 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 24px;
+
+  @media screen and(min-width:1200px) {
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
 }
 
 .products__list {
@@ -55,12 +75,6 @@
   bottom: 20px;
 }
 
-.modal {
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  padding: 28px;
-}
-
 .input__modal {
   width: 100%;
   background: rgba(248, 210, 78, 0.1);
@@ -73,10 +87,19 @@
     font-size: 12px;
     font-weight: 400;
     color: var(--primary-text-color);
+
+    @media screen and(min-width:1200px) {
+      font-size: 14px;
+    }
   }
 
   @media screen and(min-width:480px) {
     width: 224px;
+  }
+
+  @media screen and(min-width:1200px) {
+    width: 368px;
+    height: 42px;
   }
 }
 
@@ -96,12 +119,32 @@
     font-size: 12px;
     font-weight: 400;
     color: var(--primary-text-color);
+
+    @media screen and(min-width:1200px) {
+      font-size: 14px;
+    }
   }
 
   @media screen and(min-width:480px) {
     width: 224px;
   }
+
+  @media screen and(min-width:1200px) {
+    width: 368px;
+    height: 84px;
+  }
 }
+
+.textarea__products {
+  margin-bottom: 24px;
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .btn__about__mod {
   margin: 0 auto;
   background: var(--btn-color);
@@ -112,12 +155,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    width: 121px;
+  }
 }
 
 .input__products {
   margin-bottom: 12px;
-}
 
-.textarea__products {
-  margin-bottom: 24px;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+  }
 }
