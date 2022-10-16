@@ -1,0 +1,77 @@
+<!-- Модальні вікна.  -->
+<!-- Кожен повинен вставити
+    відповідну розмітку для своєї секціїї. В кінці модального вікна ставиться
+    Бекдроп (див. в кінці цієї розмітки). Модальне вікно зачиняється окрім
+    кнопки закриття ще клавішею Esc і кліком мишки по Бекдропу за межами
+    модального вікна. Стилізація модальних вікон в components/modals.scss-->
+<!-- ---------------------------------------------------- -->
+
+<!-- Елементи для виклику модальних вікон: посилання чи кнопка. У кожного елемента має бути клас "js-open-modal" і атрибут data-modal="hero-modal"(тут ставиться унікальна назва, наприклад, hero-modal, products-modal і т.д.). Клас open-modal для стилізації кнопок, може бути свій інший. -->
+
+<!-- Відкриття модалки секції Hero -->
+<a href="#" class="open-modal js-open-modal" data-modal="hero">Buy now</a>
+
+<!-- Відкриття модалки секції About -->
+<a href="#" class="open-modal js-open-modal" data-modal="about">Read more?</a>
+
+<!-- Відкриття модалок секції Contacts -->
+<a href="#" class="open-modal js-open-modal" data-modal="location"
+  >Our Locations</a
+>
+<a href="#" class="open-modal js-open-modal" data-modal="franchise"
+  >Franchise</a
+>
+
+<!-- Розмітка модальних вікон, ставиться в кінці вашої секції. Клас "modal" використовується для стилізації модального вікна в SASS. Атрибут data-modal="hero" має таку ж назву, як і кнопка його визову -->
+
+<!-- Модалка секції Hero -->
+<div class="modal modal--other-paddings-54" data-modal="hero">
+  <svg class="modal__cross js-modal-close">
+    <use href="./images/icons.svg#modal-close"></use>
+  </svg>
+
+  <!-- Далі йде розмітка вашого модального вікна -->
+  <p>Buy now</p>
+</div>
+
+<!--Модалка секції Products -->
+<div class="modal modal--other-paddings-40" data-modal="products">
+  <svg class="modal__cross js-modal-close">
+    <use href="./images/icons.svg#modal-close"></use>
+  </svg>
+
+  <!-- Далі йде розмітка вашого модального вікна -->
+  <p>Products</p>
+</div>
+
+<!-- Модалка секції About -->
+<div class="modal" data-modal="about">
+  <svg class="modal__cross js-modal-close">
+    <use href="./images/icons.svg#modal-close"></use>
+  </svg>
+
+  <!-- Далі йде розмітка вашого модального вікна -->
+  <p>How it’s made?</p>
+</div>
+
+<!-- Модалки секції Contacts -->
+<div class="modal" data-modal="location">
+  <svg class="modal__cross js-modal-close">
+    <use href="./images/icons.svg#modal-close"></use>
+  </svg>
+
+  <!-- Далі йде розмітка вашого модального вікна -->
+  <p>Our Locations</p>
+</div>
+
+<div class="modal" data-modal="franchise">
+  <svg class="modal__cross js-modal-close">
+    <use href="./images/icons.svg#modal-close"></use>
+  </svg>
+
+  <!-- Далі йде розмітка вашого модального вікна -->
+  <p>Thank you for your interest in owning an Ice Cream shop</p>
+</div>
+
+<!-- Бекдроп під модальним вікном -->
+<div class="overlay js-overlay-modal"></div>
