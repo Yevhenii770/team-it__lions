@@ -1,0 +1,81 @@
+<form class="reg-form" name="reg-form" autocomplete="off">
+  <div class="backdrop modal is-hidden" data-modal>
+    <strong class="strong__title"> Buy now</strong>
+    <ul class="products">
+      <li class="products__list ice__cream">
+        <label>
+          <img
+            class="products__img"
+            srcset="
+              ../src/images/modal_buy_now/img1__@1x.jpg 1x,
+              ../src/images/modal_buy_now/img1__@2x.jpg 2x
+            "
+            src="../src/images/modal_buy_now/img1__@1x.jpg"
+            alt=" ice cream"
+          />
+          <span class="products__name">ice cream</span>
+        </label>
+      </li>
+      <li class="products__list ice__coffee">
+        <img
+          class="products__img"
+          srcset="
+            ../src/images/modal_buy_now/img2__@1x.jpg 1x,
+            ../src/images/modal_buy_now/img2__@2x.jpg 2x
+          "
+          src="../src/images/modal_buy_now/img2__@1x.jpg"
+          alt=" ice coffee"
+        />
+        <span class="products__name">ice coffee</span>
+      </li>
+      <li class="products__list milkshake">
+        <img
+          class="products__img"
+          srcset="
+            ../src/images/modal_buy_now/img3__@1x.jpg 1x,
+            ../src/images/modal_buy_now/img3__@2x.jpg 2x
+          "
+          src="../src/images/modal_buy_now/img3__@1x.jpg"
+          alt=" milkshake"
+        />
+        <span class="products__name">milkshake</span>
+      </li>
+    </ul>
+    <div class="input__products">
+      <input
+        type="text"
+        class="input__modal"
+        name="name "
+        id="name"
+        cols="30"
+        rows="10"
+        placeholder="Name"
+      />
+    </div>
+    <div class="input__products">
+      <input
+        type="text"
+        class="input__modal"
+        name="phone "
+        id="phone"
+        cols="30"
+        rows="10"
+        placeholder="Phone"
+      />
+    </div>
+    <div class="textarea__products">
+      <label for="comment"> </label>
+      <textarea
+        class="textarea__modal"
+        name="comment "
+        id="comment"
+        cols="30"
+        rows="10"
+        placeholder="Comment"
+      ></textarea>
+    </div>
+    <div>
+      <button class="btn__about__mod" type="submit">Submit</button>
+    </div>
+  </div>
+</form>
