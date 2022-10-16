@@ -6,6 +6,7 @@
 
   @media screen and(min-width:480px) {
     width: 280px;
+    margin: 0 auto;
   }
   @media screen and(min-width:1200px) {
     width: 568px;
@@ -49,23 +50,43 @@
   text-align: center;
   filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
   border-radius: 15.7808px;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+  }
 }
 
 .ice__cream {
   border: 2px solid #96af8c;
-  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+
+  &:focus {
+    background: #96af8c;
+  }
 }
 
 .ice__coffee {
   border: 2px solid #efd478;
-  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+
+  &:focus {
+    background: #efd478;
+  }
 }
 
 .milkshake {
   border: 2px solid #d6936d;
-  filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+
+  &:focus {
+    background: #d6936d;
+  }
 }
 
+.products__img {
+  position: relative;
+  top: -50px;
+  bottom: 0;
+}
 .products__name {
   font-weight: 700;
   font-size: 16px;
@@ -73,6 +94,10 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   bottom: 20px;
+  width: 130px;
+  position: absolute;
+  bottom: 20;
+  transform: translate(-50%, -50%);
 }
 
 .input__modal {
