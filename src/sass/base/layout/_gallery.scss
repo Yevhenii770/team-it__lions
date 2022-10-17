@@ -1,0 +1,12 @@
+.gallery {
+  background-image: url(../images/gallery/gallery-bg@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/gallery/gallery-bg@2x.png);
+  }
+}
