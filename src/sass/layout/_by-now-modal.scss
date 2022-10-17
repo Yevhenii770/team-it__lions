@@ -83,20 +83,22 @@
 }
 
 .products__img {
+  max-width: 169px;
   position: relative;
-  top: -50px;
-  bottom: 0;
+  top: -50%;
+  left: -21px;
 }
 .products__name {
+  position: relative;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  bottom: 20px;
+  bottom: 0;
   width: 130px;
   position: absolute;
-  bottom: 20;
+  bottom: 5px;
   transform: translate(-50%, -50%);
 }
 
