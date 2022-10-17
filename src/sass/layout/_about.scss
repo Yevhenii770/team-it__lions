@@ -1,0 +1,61 @@
+.about {
+    text-align: center;
+}
+
+.about__wrap {
+    background-color: var(--bac-color-green);
+}
+.about__label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.about__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.about__item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    color: var(--secondary-text-color);
+}
+
+.about__button {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+
