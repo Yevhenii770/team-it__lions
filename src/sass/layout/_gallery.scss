@@ -1,18 +1,30 @@
 .gallery {
   position: relative;
+  max-width: 767px;
   height: 940px;
   margin-top: 106px;
 
-  background-color: fff;
-  background-image: url(../images/gallery/gallery-bg@1x.png);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+
+  background-image: url(../images/gallery/gallery-bg@1x.png);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url(../images/gallery/gallery-bg@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    max-width: 1199px;
+    height: 958px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    height: 1018px;
   }
 
   &__list {
@@ -24,21 +36,31 @@
     align-items: center;
   }
 
-  &__img {
+  &__thumb {
     border-radius: 7px;
+    max-width: 767px;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+      max-width: 1199px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+    @media screen and (min-width: 768px) {
+      max-width: 704px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1013px;
+    }
   }
 }
-
-// підключити в head
-// <link
-// rel="stylesheet"
-// type="text/css"
-// href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
-// <link
-// rel="stylesheet"
-// type="text/css"
-// href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-
-// Підключити в кіці body
-// <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
