@@ -8,6 +8,7 @@
 @import './utils/fonts';
 @import './utils/variables';
 @import './utils/reset';
+@import './utils/visually-hidden';
 
 /**
   |============================
@@ -24,6 +25,8 @@
 */
 @import './components/slider';
 @import './components/mobile-menu';
+@import './components/modals';
+
 /**
   |============================
   | layouts
@@ -38,3 +41,4 @@
 @import './layout/customer-reviews';
 @import './layout/contacts';
 @import './layout/footer';
+@import './layout/by-now-modal';

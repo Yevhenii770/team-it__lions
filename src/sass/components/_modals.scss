@@ -1,0 +1,113 @@
+// modal windows
+/* Стилі Бекдропа */
+
+.overlay {
+  /* Ховаємо бекдроп */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Стилі для всіх модальних вікон*/
+
+.modal {
+  /* Ховаємо вікно  */
+  opacity: 0;
+  visibility: hidden;
+
+  width: 280px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0) rotateX(0deg);
+  z-index: 30; /* повинен бути більше бекдропа*/
+  text-align: center;
+  padding: 28px;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  background-color: var(--secondary-text-color);
+  transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 1s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 1s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 32px 60px;
+  }
+
+  &--other-paddings-40 {
+    padding: 28px 20px;
+
+    @media screen and (min-width: 768px) {
+      padding: 32px 40px;
+    }
+  }
+
+  &--other-paddings-54 {
+    @media screen and (min-width: 768px) {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1) rotateX(360deg);
+  }
+}
+
+/* Стилі кнопки закриття */
+
+.modal__cross {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  fill: var(--primary-text-color);
+  cursor: pointer;
+  transition: fill 800ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: #0a8817;
+  }
+}
+
+/* Стилі тимчасових кнопок відкриття */
+
+.open-modal {
+  padding: 20px;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #414b52;
+  margin: 10px;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
