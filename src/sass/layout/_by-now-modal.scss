@@ -1,18 +1,5 @@
-.modal {
-  width: 100%;
+.modal_bynow {
   border: 2px solid #f8d24e;
-  border-radius: 10px;
-  padding: 28px;
-
-  @media screen and(min-width:480px) {
-    width: 280px;
-    margin: 0 auto;
-  }
-  @media screen and(min-width:1200px) {
-    width: 568px;
-    padding: 32px 54px;
-    margin: 0 auto;
-  }
 }
 
 .strong__title {
@@ -23,7 +10,7 @@
   font-size: 16px;
   line-height: calc(24 / 16);
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:768px) {
     font-size: 20px;
     line-height: calc(28 / 20);
     margin-bottom: 103px;
@@ -37,7 +24,7 @@
   align-items: center;
   margin-bottom: 24px;
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:768px) {
     flex-direction: row;
     gap: 32px;
     margin-bottom: 40px;
@@ -115,18 +102,14 @@
     font-weight: 400;
     color: var(--primary-text-color);
 
-    @media screen and(min-width:1200px) {
-      font-size: 14px;
+    @media screen and(min-width:480px) {
+      width: 224px;
     }
-  }
-
-  @media screen and(min-width:480px) {
-    width: 224px;
-  }
-
-  @media screen and(min-width:1200px) {
-    width: 368px;
-    height: 42px;
+    @media screen and(min-width:768px) {
+      font-size: 14px;
+      height: 42px;
+      width: 368px;
+    }
   }
 }
 
@@ -146,26 +129,23 @@
     font-size: 12px;
     font-weight: 400;
     color: var(--primary-text-color);
-
-    @media screen and(min-width:1200px) {
-      font-size: 14px;
-    }
   }
 
   @media screen and(min-width:480px) {
     width: 224px;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:768px) {
     width: 368px;
     height: 84px;
+    font-size: 14px;
   }
 }
 
 .textarea__products {
   margin-bottom: 24px;
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:768px) {
     margin-bottom: 32px;
     display: flex;
     justify-content: center;
@@ -186,7 +166,7 @@
   font-size: 12px;
   line-height: calc(15 / 12);
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:768px) {
     font-size: 14px;
     line-height: calc(17 / 14);
     width: 121px;
@@ -196,9 +176,15 @@
 .input__products {
   margin-bottom: 12px;
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:768px) {
     margin-bottom: 16px;
     display: flex;
     justify-content: center;
   }
+}
+
+.input__by_now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

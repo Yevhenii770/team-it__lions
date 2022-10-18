@@ -32,50 +32,50 @@
 
   <!-- Далі йде розмітка вашого модального вікна -->
   <form class="reg-form" name="reg-form" autocomplete="off">
-    <div data-modal>
-      <strong class="strong__title"> Buy now</strong>
-      <ul class="products">
-        <li class="products__list ice__cream">
-          <label>
-            <img
-              class="products__img"
-              srcset="
-                ./images/modal_buy_now/img1__@x1.png 1x,
-                ./images/modal_buy_now/img1__@2x.png 2x
-              "
-              src="./images/modal_buy_now/img1__@x1.png"
-              alt=" ice cream"
-            />
+    <strong class="strong__title"> Buy now</strong>
+    <ul class="products">
+      <li class="products__list ice__cream">
+        <label>
+          <img
+            class="products__img"
+            srcset="
+              ./images/modal_buy_now/img1__@x1.png 1x,
+              ./images/modal_buy_now/img1__@2x.png 2x
+            "
+            src="./images/modal_buy_now/img1__@x1.png"
+            alt=" ice cream"
+          />
 
-            <span class="products__name">ice cream</span>
-          </label>
-        </li>
-        <li class="products__list ice__coffee">
-          <img
-            class="products__img"
-            srcset="
-              ./images/modal_buy_now/img2__@x1.png 1x,
-              ./images/modal_buy_now/img2__@2x.png 2x
-            "
-            src="./images/modal_buy_now/img2__@x1.png"
-            alt=" ice coffee"
-          />
-          <span class="products__name">ice coffee</span>
-        </li>
-        <li class="products__list milkshake">
-          <img
-            class="products__img"
-            srcset="
-              ./images/modal_buy_now/img3__@x1.png 1x,
-              ./images/modal_buy_now/img3__@2x.png 2x
-            "
-            src="./images/modal_buy_now/img3__@x1.png"
-            alt=" milkshake"
-          />
-          <span class="products__name">milkshake</span>
-        </li>
-      </ul>
-      <div class="input__products">
+          <span class="products__name">ice cream</span>
+        </label>
+      </li>
+      <li class="products__list ice__coffee">
+        <img
+          class="products__img"
+          srcset="
+            ./images/modal_buy_now/img2__@x1.png 1x,
+            ./images/modal_buy_now/img2__@2x.png 2x
+          "
+          src="./images/modal_buy_now/img2__@x1.png"
+          alt=" ice coffee"
+        />
+        <span class="products__name">ice coffee</span>
+      </li>
+      <li class="products__list milkshake">
+        <img
+          class="products__img"
+          srcset="
+            ./images/modal_buy_now/img3__@x1.png 1x,
+            ./images/modal_buy_now/img3__@2x.png 2x
+          "
+          src="./images/modal_buy_now/img3__@x1.png"
+          alt=" milkshake"
+        />
+        <span class="products__name">milkshake</span>
+      </li>
+    </ul>
+    <ul class="input__by_now">
+      <li class="input__products">
         <input
           type="text"
           class="input__modal"
@@ -83,8 +83,8 @@
           id="name"
           placeholder="Name"
         />
-      </div>
-      <div class="input__products">
+      </li>
+      <li class="input__products">
         <input
           type="text"
           class="input__modal"
@@ -92,8 +92,8 @@
           id="phone"
           placeholder="Phone"
         />
-      </div>
-      <div class="textarea__products">
+      </li>
+      <li class="textarea__products">
         <label for="comment"> </label>
         <textarea
           class="textarea__modal"
@@ -101,10 +101,11 @@
           id="comment"
           placeholder="Comment"
         ></textarea>
-      </div>
-      <div>
-        <button class="btn__about__mod" type="submit">Submit</button>
-      </div>
+      </li>
+    </ul>
+
+    <div>
+      <button class="btn__about__mod" type="submit">Submit</button>
     </div>
   </form>
 </div>
