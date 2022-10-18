@@ -97,17 +97,18 @@
   }
 }
 
-/* Стилі тимчасових кнопок відкриття */
+// Стилі тексту описання
+.modal__desc {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  text-align: left;
+  font-size: 14px;
+  line-height: calc(20 / 14);
 
-.open-modal {
-  padding: 20px;
-  display: inline-block;
-  width: 100px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #414b52;
-  margin: 10px;
-  color: #fff;
-  border-radius: 3px;
-  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+  }
 }
