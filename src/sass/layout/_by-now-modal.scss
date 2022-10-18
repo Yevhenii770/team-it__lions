@@ -1,22 +1,21 @@
-.modal {
-  width: 100%;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  padding: 28px;
+// .modal {
+//   width: 100%;
+//   border: 2px solid #f8d24e;
+//   border-radius: 10px;
+//   padding: 28px;
 
-  @media screen and(min-width:480px) {
-    width: 280px;
-    margin: 0 auto;
-  }
-  @media screen and(min-width:1200px) {
-    width: 568px;
-    padding: 32px 54px;
-    margin: 0 auto;
-  }
-}
+//   @media screen and(min-width:480px) {
+//     width: 280px;
+//     margin: 0 auto;
+//   }
+//   @media screen and(min-width:1200px) {
+//     width: 568px;
+//     padding: 32px 54px;
+//     margin: 0 auto;
+//   }
+// }
 
 .strong__title {
-  margin-bottom: 83px;
   display: flex;
   justify-content: center;
   font-family: 'Seymour One';
@@ -26,7 +25,6 @@
   @media screen and(min-width:1200px) {
     font-size: 20px;
     line-height: calc(28 / 20);
-    margin-bottom: 103px;
   }
 }
 
@@ -35,11 +33,13 @@
   gap: 83px;
   flex-direction: column;
   align-items: center;
+  margin-top: 83px;
   margin-bottom: 24px;
 
   @media screen and(min-width:1200px) {
     flex-direction: row;
     gap: 32px;
+    margin-top: 103px;
     margin-bottom: 40px;
   }
 }
@@ -183,6 +183,7 @@
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
+  cursor: pointer;
 
   @media screen and(min-width:1200px) {
     font-size: 14px;
@@ -192,6 +193,7 @@
 }
 
 .input__products {
+  display: block;
   margin-bottom: 12px;
 
   @media screen and(min-width:1200px) {
