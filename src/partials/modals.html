@@ -11,17 +11,6 @@
 <!-- Відкриття модалки секції Hero -->
 <a href="#" class="open-modal js-open-modal" data-modal="hero">Buy now</a>
 
-<!-- Відкриття модалки секції About -->
-<a href="#" class="open-modal js-open-modal" data-modal="about">Read more?</a>
-
-<!-- Відкриття модалок секції Contacts -->
-<a href="#" class="open-modal js-open-modal" data-modal="location"
-  >Our Locations</a
->
-<a href="#" class="open-modal js-open-modal" data-modal="franchise"
-  >Franchise</a
->
-
 <!-- Розмітка модальних вікон, ставиться в кінці вашої секції. Клас "modal" використовується для стилізації модального вікна в SASS. Атрибут data-modal="hero" має таку ж назву, як і кнопка його визову -->
 
 <!-- Модалка секції Hero -->
@@ -145,8 +134,73 @@
     <use href="./images/icons.svg#modal-close"></use>
   </svg>
 
-  <!-- Далі йде розмітка вашого модального вікна -->
-  <p>Thank you for your interest in owning an Ice Cream shop</p>
+  <strong class="strong__title"
+    >Thank you for your interest in owning an Ice Cream shop</strong
+  >
+  <p class="modal__desc">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
+
+  <form>
+    <!-- name -->
+    <label class="input__products">
+      <input
+        class="input__modal"
+        type="text"
+        name="user"
+        minlength="3"
+        placeholder="Name"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
+        required
+      />
+    </label>
+
+    <!-- tell -->
+    <label class="input__products">
+      <input
+        class="input__modal"
+        type="tel"
+        name="phone"
+        minlength="12"
+        maxlength="12"
+        placeholder="Phone"
+        pattern="^+380\d{3}\d{2}\d{2}\d{2}$"
+        title="Example phone number: +38012345678"
+        required
+      />
+    </label>
+
+    <!-- mail -->
+    <label class="input__products">
+      <input
+        class="input__modal"
+        type="email"
+        name="email"
+        placeholder="Email"
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        title="Example e-mail: mail@email.com"
+        required
+      />
+    </label>
+
+    <!-- coment -->
+    <label class="textarea__products">
+      <textarea
+        class="textarea__modal"
+        name="comment"
+        cols="30"
+        rows="10"
+        placeholder="Comment"
+      >
+      </textarea>
+    </label>
+    <button class="btn__about__mod" type="submit">Submit</button>
+  </form>
 </div>
 
 <!-- Бекдроп під модальним вікном -->
