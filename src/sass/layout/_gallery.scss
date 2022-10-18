@@ -32,7 +32,7 @@
     flex-direction: column;
     align-items: center;
 
-    position: relative;
+    position: absolute;
     top: -130px;
     width: 100%;
   }
@@ -47,21 +47,21 @@
     }
 
     @media screen and (min-width: 1200px) {
-      max-width: 1200px;
+      max-width: 1600px;
     }
   }
 
   &__img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 
     @media screen and (min-width: 768px) {
-      max-width: 704px;
+      width: 704px;
     }
 
     @media screen and (min-width: 1200px) {
-      max-width: 1013px;
+      width: 1013px;
     }
   }
 }
