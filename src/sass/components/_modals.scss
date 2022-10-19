@@ -112,3 +112,24 @@
     line-height: calc(22 / 16);
   }
 }
+.modal__map {
+  border: none;
+  border-radius: 10px;
+  width: 448px;
+  height: 260px;
+  margin-bottom: 32px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Seymour One';
+  font-size: 16px;
+  line-height: calc(24 / 16);
+
+  @media screen and(min-width:768px) {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    margin-bottom: 32px;
+  }
+}
