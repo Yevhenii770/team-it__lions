@@ -1,19 +1,30 @@
 .about {
     text-align: center;
+    background-color: var(--bac-color-green);
+    
+        @media screen and (min-width: 768px) {
+            padding-left: 34px;
+            padding-right: 34px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-left: 18px;
+            padding-right: 121px;
+        }
 }
 
 .about__wrap {
-    background-color: var(--bac-color-green);
+    // background-color: var(--bac-color-green);
 
-    @media screen and (min-width: 768px) {
-        padding-left: 34px;
-        padding-right: 34px;
-    }
+    // @media screen and (min-width: 768px) {
+    //     padding-left: 34px;
+    //     padding-right: 34px;
+    // }
 
-        @media screen and (min-width: 1200px) {
-        padding-left: 18px;
-        padding-right: 121px;
-    }
+    //     @media screen and (min-width: 1200px) {
+    //     padding-left: 18px;
+    //     padding-right: 121px;
+    // }
 }
 
 .about__label {
