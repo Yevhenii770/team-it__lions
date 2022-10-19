@@ -1,8 +1,5 @@
 .hero__container {
   background-color: var(--bac-color-green);
-  
-}
-.hero__container {
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
@@ -19,7 +16,6 @@
 
   @media screen and (min-width: 768px) {
     background-image: url('../images/hero/bg-image/tablet/bg-768@.png');
-
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -53,7 +49,7 @@
   color: var(--secondary-text-color);
 
   max-width: 250px;
-  padding-top: 30px;
+  padding-top: 40px;
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
@@ -61,7 +57,7 @@
     line-height: calc(23 / 18);
 
     max-width: 180px;
-    padding-top: 40px;
+    padding-top: 30px;
     margin-bottom: 20px;
   }
   @media screen and (min-width: 1200px) {
@@ -70,7 +66,7 @@
     letter-spacing: 0.04em;
 
     max-width: 367px;
-    padding-top: 45px;
+    padding-top: 35px;
     margin-bottom: 30px;
   }
 
@@ -149,15 +145,20 @@
   display: block;
   position: absolute;
   bottom: -50px;
-  right: 120px;
+  left: 45%;
+  transform: translateX(-50%);
+  pointer-events: none;
+
 
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
     bottom: -50px;
+    left: unset;
     right: 10px;
+    transform: translateX(0);
   }
-  
+
   @media screen and (min-width: 1200px) {
     bottom: -110px;
     right: 0;
@@ -168,14 +169,33 @@
   position: absolute;
   display: block;
   bottom: -1px;
-  right: 187px;
+  left: 45%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  animation: ice 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @keyframes ice {
+    0%{
+      scale: 0.5;
+    }
+    50%{
+      scale: 1.5;
+    }
+    75%{
+      scale: 1.5;
+    }
+    100%{
+      scale: 1;
+    }
+  }
+
   // width: 25vh;
 
   @media screen and (min-width: 768px) {
-    
+    transform: translateX(0);
+    left: unset;
     right: 93px;
   }
-  
 }
 .hero_subsidiary {
   display: none;
@@ -183,12 +203,27 @@
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 32px;
   }
   @media screen and (min-width: 1200px) {
     top: 50px;
     right: 15px;
+
+    @keyframes ice {
+      0%{
+        scale: 0.5;
+      }
+      50%{
+        scale: 1.25;
+      }
+      75%{
+        scale: 1.25;
+      }
+      100%{
+        scale: 1;
+      }
+    }
   }
 }
 .hero__sibsidiary__item {
@@ -260,26 +295,36 @@
     cursor: pointer;
 
     & .hero__icon--focus {
-      display: none;
+      // display: none;
+      fill: transparent;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     & .hero__icon--hover {
-      display: none;
+      fill: transparent;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:hover .hero__icon--default {
-      display: none;
+      fill: transparent;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     }
     &:hover .hero__icon--hover {
-      display: block;
       fill: var(--secondary-text-color);
     }
     &:focus .hero__icon--default {
-      display: none;
+      fill: transparent;
+      // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     }
     &:focus .hero__icon--hover {
-      display: none;
+      fill: transparent;
+
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     }
     &:focus .hero__icon--focus {
-      display: block;
+
       fill: var(--secondary-text-color);
     }
     &:focus {
@@ -292,14 +337,12 @@
 }
 
 .hero__box__img--plate {
-
-
   @media screen and (min-width: 768px) {
     position: absolute;
     // display: block;
     top: -28px;
     left: -185px;
-    min-width: 152px
+    min-width: 152px;
   }
   @media screen and (min-width: 1200px) {
     // position: absolute;
@@ -307,7 +350,5 @@
     min-width: 225px;
     top: -67px;
     left: -255px;
-
   }
-  
 }
