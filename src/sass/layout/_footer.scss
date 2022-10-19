@@ -1,5 +1,5 @@
 .footer {
-  // padding-top: 40px;
+  background-color: var(--bac-color-green);
   padding-bottom: 62px;
 
   @media screen and (min-width: 768px) {
@@ -68,8 +68,6 @@
 }
 
 .footer__all {
-  background-color: var(--bac-color-green);
-
   @media screen and (min-width: 320px) {
     padding-top: 40px;
     padding-bottom: 62px;
