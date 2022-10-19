@@ -98,6 +98,14 @@
   display: flex;
   justify-content: center;
   padding: 12px 34px;
+  &:hover,
+    &:focus {
+      background-color: #0A8817;
+    }
+  
+    &:focus>.btn-text {
+      color: (var(--secondary-text-color));
+    }
 }
 
 .btn-text {
