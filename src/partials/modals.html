@@ -203,5 +203,101 @@
   </form>
 </div>
 
+<!-- Модалкa Buy now -->
+<div class="modal" data-modal="modal_buy_now">
+  <svg class="modal__cross js-modal-close">
+    <use href="./images/icons.svg#modal-close"></use>
+  </svg>
+  
+<!-- Далі йде розмітка вашого модального вікна -->
+<form class="reg-form" name="reg-form" autocomplete="off">
+  <strong class="strong__title"> Buy now</strong>
+  <ul class="products">
+    <li class="products__list ice__cream">
+      <label>
+        <input class="hidden" type="checkbox" />
+        <img
+          class="products__img"
+          srcset="
+            ./images/modal_buy_now/img1__@x1.png 1x,
+            ./images/modal_buy_now/img1__@2x.png 2x
+          "
+          src="./images/modal_buy_now/img1__@x1.png"
+          alt=" ice cream"
+        />
+        <span class="products__name">ice cream</span>
+      </label>
+    </li>
+    <li class="products__list ice__coffee">
+      <label>
+        <input class="hidden" type="checkbox" />
+        <img
+          class="products__img"
+          srcset="
+            ./images/modal_buy_now/img2__@x1.png 1x,
+            ./images/modal_buy_now/img2__@2x.png 2x
+          "
+          src="./images/modal_buy_now/img2__@x1.png"
+          alt=" ice coffee"
+        />
+        <span class="products__name">ice coffee</span>
+      </label>
+    </li>
+    <li class="products__list milkshake">
+      <label>
+        <input class="hidden" type="checkbox" />
+        <img
+          class="products__img"
+          srcset="
+            ./images/modal_buy_now/img3__@x1.png 1x,
+            ./images/modal_buy_now/img3__@2x.png 2x
+          "
+          src="./images/modal_buy_now/img3__@x1.png"
+          alt=" milkshake"
+        />
+        <span class="products__name">milkshake</span>
+      </label>
+    </li>
+  </ul>
+  <ul>
+    <li class="input__products">
+      <input
+        type="text"
+        class="input__modal"
+        name="name "
+        id="name"
+        cols="30"
+        rows="10"
+        placeholder="Name"
+      />
+    </li>
+    <li class="input__products">
+      <input
+        type="text"
+        class="input__modal"
+        name="phone "
+        id="phone"
+        cols="30"
+        rows="10"
+        placeholder="Phone"
+      />
+    </li>
+    <li class="textarea__products">
+      <textarea
+        class="textarea__modal"
+        name="comment "
+        id="comment"
+        cols="30"
+        rows="10"
+        placeholder="Comment"
+      ></textarea>
+    </li>
+  </ul>
+
+  <div>
+    <button class="btn__about__mod" type="submit">Submit</button>
+  </div>
+</form>
+</div>
 <!-- Бекдроп під модальним вікном -->
 <div class="overlay js-overlay-modal"></div>
