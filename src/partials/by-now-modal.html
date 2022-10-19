@@ -1,22 +1,24 @@
 <form class="reg-form" name="reg-form" autocomplete="off">
-  <div class="backdrop modal is-hidden" data-modal>
-    <strong class="strong__title"> Buy now</strong>
-    <ul class="products">
-      <li class="products__list ice__cream">
-        <label>
-          <img
-            class="products__img"
-            srcset="
-              ./images/modal_buy_now/img1__@x1.png 1x,
-              ./images/modal_buy_now/img1__@2x.png 2x
-            "
-            src="./images/modal_buy_now/img1__@x1.png"
-            alt=" ice cream"
-          />
-          <span class="products__name">ice cream</span>
-        </label>
-      </li>
-      <li class="products__list ice__coffee">
+  <strong class="strong__title"> Buy now</strong>
+  <ul class="products">
+    <li class="products__list ice__cream">
+      <label>
+        <input class="hidden" type="checkbox" />
+        <img
+          class="products__img"
+          srcset="
+            ./images/modal_buy_now/img1__@x1.png 1x,
+            ./images/modal_buy_now/img1__@2x.png 2x
+          "
+          src="./images/modal_buy_now/img1__@x1.png"
+          alt=" ice cream"
+        />
+        <span class="products__name">ice cream</span>
+      </label>
+    </li>
+    <li class="products__list ice__coffee">
+      <label>
+        <input class="hidden" type="checkbox" />
         <img
           class="products__img"
           srcset="
@@ -27,8 +29,11 @@
           alt=" ice coffee"
         />
         <span class="products__name">ice coffee</span>
-      </li>
-      <li class="products__list milkshake">
+      </label>
+    </li>
+    <li class="products__list milkshake">
+      <label>
+        <input class="hidden" type="checkbox" />
         <img
           class="products__img"
           srcset="
@@ -39,9 +44,11 @@
           alt=" milkshake"
         />
         <span class="products__name">milkshake</span>
-      </li>
-    </ul>
-    <div class="input__products">
+      </label>
+    </li>
+  </ul>
+  <ul>
+    <li class="input__products">
       <input
         type="text"
         class="input__modal"
@@ -51,8 +58,8 @@
         rows="10"
         placeholder="Name"
       />
-    </div>
-    <div class="input__products">
+    </li>
+    <li class="input__products">
       <input
         type="text"
         class="input__modal"
@@ -62,9 +69,8 @@
         rows="10"
         placeholder="Phone"
       />
-    </div>
-    <div class="textarea__products">
-      <label for="comment"> </label>
+    </li>
+    <li class="textarea__products">
       <textarea
         class="textarea__modal"
         name="comment "
@@ -73,9 +79,10 @@
         rows="10"
         placeholder="Comment"
       ></textarea>
-    </div>
-    <div>
-      <button class="btn__about__mod" type="submit">Submit</button>
-    </div>
+    </li>
+  </ul>
+
+  <div>
+    <button class="btn__about__mod" type="submit">Submit</button>
   </div>
 </form>

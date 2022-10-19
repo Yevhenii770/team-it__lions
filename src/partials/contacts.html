@@ -118,8 +118,11 @@
 
     <ul class="contacts-button__list">
       <li class="contacts-button__item">
-        <button class="contacts-button__left contacts-button" type="button">
-          <span class="contacts-button__desc">Our Locations</span>
+        <button
+          class="contacts-button__left js-open-modal"
+          data-modal="location"
+        >
+          Our Locations
           <svg class="contacts-button__icon" width="12" height="12">
             <use href="./images/icons.svg#contacts-button"></use>
           </svg>
@@ -127,11 +130,10 @@
       </li>
       <li class="contacts-button__item">
         <button
-          disabled="disabled"
-          class="contacts-button__right contacts-button"
-          type="button"
+          class="contacts-button__right js-open-modal"
+          data-modal="franchise"
         >
-          <span class="contacts-button__desc">Franchise</span>
+          Franchise
           <svg class="contacts-button__icon" width="12" height="12">
             <use href="./images/icons.svg#contacts-button"></use>
           </svg>
