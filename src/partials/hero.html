@@ -1,1 +1,162 @@
+<section class="hero">
+  <div class="container hero__container">
+    <h1 class="hero__title">
+      ice cream made with <span class="hero__title--word">passion</span>
+    </h1>
+    <ul class="hero__list">
+      <li class="hero__item">
+        <a href="#products" class="hero__link--left"> Products </a>
+      </li>
+      <li class="hero__item">
+        <a href="#about" class="hero__link--right"> How it’s made? </a>
+      </li>
+    </ul>
+    <picture>
+      <source
+        srcset="
+        ./images/hero/mobile/fog-m@.png 1x,
+        ./images/hero/mobile/fog-m@.png 2x
+        "
+        media="(max-width: 767px)"
+      >
+      <source
+        srcset="
+          ./images/hero/desktop/fog-d@.png 1x,
+          ./images/hero/desktop/fog-d@.png 2x
+        "
+        media="(min-width: 1200px)"
+      >
+      <source
+        srcset="
+          ./images/hero/tablet/fog-t@.png 1x,
+          ./images/hero/tablet/fog-t@.png 2x
+        "
+        media="(min-width: 768px)"
+      >
+      <img
+        class="hero__img--fog"
+        srcset="
+          ./images/hero/mobile/fog-m@.png 1x,
+          ./images/hero/mobile/fog-m@.png 2x
+        "
+        src="./images/hero/mobile/fog-m@.png"
+        alt=""
+      >
+    </picture>
 
+    <picture>
+      <source
+        srcset="
+          ./images/hero/mobile/ice-170@.png   1x,
+          ./images/hero/mobile/ice-170@2x.png 2x,
+          ./images/hero/mobile/ice-170@3x.png 3x
+        "
+        media="(max-width: 767px)"
+      >
+      <source
+        srcset="
+          ./images/hero/desktop/ice-455@.png   1x,
+          ./images/hero/desktop/ice-455@2x.png 2x,
+          ./images/hero/desktop/ice-455@3x.png 3x
+        "
+        media="(min-width: 1200px)"
+      >
+      <source
+        srcset="
+          ./images/hero/tablet/ice-257@.png   1x,
+          ./images/hero/tablet/ice-257@2x.png 2x,
+          ./images/hero/tablet/ice-257@3x.png 3x
+        "
+        media="(min-width: 768px)"
+      >
+      <img
+        class="hero__img--ice"
+        srcset="
+          ./images/hero/mobile/ice-170@.png   1x,
+          ./images/hero/mobile/ice-170@2x.png 2x,
+          ./images/hero/mobile/ice-170@3x.png 3x
+        "
+        src="./images/hero/mobile/ice-170@.png"
+        alt="Many ices on plate"
+      >
+    </picture>
+
+    <ul class="hero_subsidiary">
+      <li class="hero__sibsidiary__item">
+        <span class="hero__sibsidiary__number">16</span>
+        <p class="hero__sibsidiary__desc">cafes</p>
+      </li>
+      <li class="hero__sibsidiary__item">
+        <span class="hero__sibsidiary__number">23</span>
+        <p class="hero__sibsidiary__desc">food trucks</p>
+      </li>
+    </ul>
+
+    <div class="hero__box">
+      <p class="hero__box__desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+      <button
+        data-modal="products"
+        class="hero__icon products-button open-modal js-open-modal"
+        type="button"
+        aria-label="icon-only button"
+      >
+        <svg
+          class="hero__icon__arrow"
+          width="50"
+          height="20"
+          aria-label="arrow"
+        >
+          <use
+            class="hero__icon--default"
+            width="40"
+            height="15"
+            href="./images/icons.svg#icon-arrow-default"
+          ></use>
+          <use
+            class="hero__icon--hover"
+            width="50"
+            height="15"
+            href="./images/icons.svg#icon-arrow-hover"
+          ></use>
+          <use
+            class="hero__icon--focus"
+            width="40"
+            height="20"
+            href="./images/icons.svg#icon-arrow-focus"
+          ></use>
+        </svg>
+      </button>
+      <picture>
+        <source
+          srcset="
+            ./images/hero/tablet/plate-152@.png   1x,
+            ./images/hero/tablet/plate-152@2x.png 2x,
+            ./images/hero/tablet/plate-152@3x.png 3x
+          "
+          media="(max-width: 1039px)"
+        >
+        <source
+          srcset="
+            ./images/hero/desktop/plate-225@.png   1x,
+            ./images/hero/desktop/plate-225@2x.png 2x,
+            ./images/hero/desktop/plate-225@3x.png 3x
+          "
+          media="(min-width: 1200px)"
+        >
+        <img
+          class="hero__box__img--plate"
+          srcset="
+            ./images/hero/tablet/plate-152@.png   1x,
+            ./images/hero/tablet/plate-152@2x.png 2x,
+            ./images/hero/tablet/plate-152@3x.png 3x
+          "
+          src="./images/hero/tablet/plate-152@.png"
+          alt="Many ices on plate"
+        >
+      </picture>
+    </div>
+  </div>
+</section>
