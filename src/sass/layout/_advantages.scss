@@ -37,8 +37,11 @@
   }
 
   &__item {
+    margin-bottom: 27px;
+
     @media screen and (min-width: 768px) {
       width: calc((100% - 160px) / 3);
+      margin-bottom: auto;
     }
 
     @media screen and (min-width: 1200px) {
@@ -46,20 +49,18 @@
     }
   }
 
-  &__icon {
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    margin: auto;
+
     background-color: var(--btn-color);
     border-radius: 50%;
-    //width: 50px;
-    //height: 50px;
     margin-bottom: 16px;
-
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 32px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 40px;
-    }
   }
 
   &__title {
