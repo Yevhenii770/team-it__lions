@@ -145,6 +145,38 @@
   }
 }
 
+.hero__img--fog {
+  display: block;
+  position: absolute;
+  bottom: -50px;
+  right: 120px;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    right: 10px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    bottom: -110px;
+    right: 0;
+    min-width: 477px;
+  }
+}
+.hero__img--ice {
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  right: 187px;
+  // width: 25vh;
+
+  @media screen and (min-width: 768px) {
+    
+    right: 93px;
+  }
+  
+}
 .hero_subsidiary {
   display: none;
 
