@@ -4,7 +4,9 @@
 
 .about__wrap {
     background-color: var(--bac-color-green);
+    background-size: contain;
 }
+
 .about__label {
     font-family: 'Montserrat';
     font-style: normal;
@@ -15,8 +17,21 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--secondary-text-color);
-    margin: 0 auto;
     padding-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 37px;
+    }
+    
 }
 
 .about__title {
@@ -30,7 +45,28 @@
     text-transform: uppercase;
     color: var(--secondary-text-color);
     max-width: 200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 454px;
+        margin-bottom: 72px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        // max-width: 481px;
+        margin-bottom: 82px;
+    }
+}
+
+.about__image {
+    display: inline-block;
+}
+
+.about__list {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .about__item {
@@ -41,21 +77,69 @@
     line-height: 176%;
     letter-spacing: 0.04em;
     color: var(--secondary-text-color);
+    margin-bottom: 4px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 8px;
+    }
+
+
+    &:last-child {
+        margin-bottom: 0;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: contents;
+        }
+    }
 }
 
 .about__button {
-    background-color: var(--accent-color);
-    border-radius: 10px;
+    background-color: var(--btn-color);
+    color: var(--primary-text-color);
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
-    color: var(--primary-text-color);
+    align-items: center;
     cursor: pointer;
-    border: none;
-    padding-top: 12px;
-    padding-bottom: 12px;
 
+    border: none;
+    border-radius: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 164px;
+    height: 42px;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+    &:hover {
+        background-color: #0A8817;
+    }
+
+    &:focus {
+        background-color: #0A8817;
+        color: (var(--secondary-text-color));
+    }
 }
 
+.about__circle {
+    position: relative;
+}
+
+// .about__icon {
+//     &:focus {
+//         fill: var(--secondary-text-color);
+//     }
+// }
+
+// @media screen and (min-width: 768px)
+
+
+// @media screen and (min-width: 1200px)
