@@ -1,9 +1,8 @@
-.modal_bynow {
-  border: 2px solid #f8d24e;
-}
+// .modal_bynow {
+//   border: 2px solid #f8d24e;
+// }
 
 .strong__title {
-  margin-bottom: 83px;
   display: flex;
   justify-content: center;
   font-family: 'Seymour One';
@@ -13,11 +12,11 @@
   @media screen and(min-width:768px) {
     font-size: 20px;
     line-height: calc(28 / 20);
-    margin-bottom: 103px;
   }
 }
 
 .products {
+  margin-top: 83px;
   display: flex;
   gap: 83px;
   flex-direction: column;
@@ -27,6 +26,7 @@
   @media screen and(min-width:768px) {
     flex-direction: row;
     gap: 32px;
+    margin-top: 103px;
     margin-bottom: 40px;
   }
 }
