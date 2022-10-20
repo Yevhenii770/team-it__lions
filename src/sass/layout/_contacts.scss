@@ -1,19 +1,24 @@
-.contacts-set {
+.contacts {
   background-color: var(--bac-color-green);
+  position: relative;
+}
 
+.contacts-set {
   &__list {
     display: flex;
     align-items: center;
-    position: relative;
 
     @media screen and (max-width: 767px) {
       flex-direction: column;
       margin-bottom: 32px;
+      padding-top: 87px;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       gap: 16px;
       margin-bottom: 60px;
+      position: absolute;
+      top: -320px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -34,6 +39,11 @@
 
       &:not(:last-child) {
         margin-bottom: 20px;
+      }
+
+      &:first-child {
+        position: absolute;
+        top: -354px;
       }
     }
 
@@ -231,8 +241,14 @@
     flex-direction: column;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     justify-content: center;
+    padding-top: 267px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    padding-top: 100px;
   }
 }
 
