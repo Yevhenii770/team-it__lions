@@ -158,3 +158,16 @@
     margin-bottom: 0px;
   }
 }
+
+.social__icon {
+  fill: var(--bac-color-green);
+
+  transition-property: scale, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social__icon:hover,
+.social__icon:focus {
+  scale: (1.3);
+}
