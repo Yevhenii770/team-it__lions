@@ -1,7 +1,25 @@
 .modal_bynow {
   border: 2px solid #f8d24e;
-}
+  width: 100%;
 
+  @media screen and(min-width:480px) {
+    width: 280px;
+  }
+  @media screen and(min-width:768px) {
+    width: 568px;
+  }
+}
+.input__bynow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+
+  @media screen and(min-width:768px) {
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+}
 .strong__title {
   margin-bottom: 83px;
   display: flex;
@@ -48,7 +66,7 @@
 .ice__cream {
   border: 2px solid #96af8c;
 
-  &:focus {
+  &:checked {
     background: #96af8c;
   }
 }
@@ -95,7 +113,12 @@
   border: 1px solid #84a178;
   border-radius: 10px;
   height: 32px;
-  padding: 8px 48px 7px 12px;
+  padding: 5px 48px 7px 12px;
+  outline-color: #84a178;
+
+  &:not(:placeholder-shown):required:invalid {
+    border: 1px solid #ec0a0a;
+  }
 
   @media screen and(min-width:480px) {
     width: 224px;
@@ -103,15 +126,12 @@
   @media screen and(min-width:768px) {
     height: 42px;
     width: 368px;
+    font-size: 14px;
   }
   &::placeholder {
     font-size: 12px;
     font-weight: 400;
     color: var(--primary-text-color);
-
-    @media screen and(min-width:768px) {
-      font-size: 14px;
-    }
   }
 }
 
@@ -126,14 +146,12 @@
   border-radius: 10px;
   padding-left: 12px;
   padding-top: 8px;
+  outline-color: #84a178;
 
   &::placeholder {
     font-size: 12px;
     font-weight: 400;
     color: var(--primary-text-color);
-    @media screen and(min-width:768px) {
-      font-size: 14px;
-    }
   }
 
   @media screen and(min-width:480px) {

@@ -25,6 +25,7 @@
     <ul class="products">
       <li class="products__list ice__cream">
         <label>
+          <input class="hidden" type="checkbox">
           <img
             class="products__img"
             srcset="
@@ -39,28 +40,33 @@
         </label>
       </li>
       <li class="products__list ice__coffee">
-        <img
-          class="products__img"
-          srcset="
-            ./images/modal_buy_now/img2__@x1.png 1x,
-            ./images/modal_buy_now/img2__@2x.png 2x
-          "
-          src="./images/modal_buy_now/img2__@x1.png"
-          alt=" ice coffee"
-        />
-        <span class="products__name">ice coffee</span>
+        <label >
+          <input class="hidden" type="checkbox">
+          <img
+            class="products__img"
+            srcset="
+              ./images/modal_buy_now/img2__@x1.png 1x,
+              ./images/modal_buy_now/img2__@2x.png 2x
+            "
+            src="./images/modal_buy_now/img2__@x1.png"
+            alt=" ice coffee"
+          />
+          <span class="products__name">ice coffee</span>
+        </label>
       </li>
       <li class="products__list milkshake">
-        <img
-          class="products__img"
-          srcset="
-            ./images/modal_buy_now/img3__@x1.png 1x,
-            ./images/modal_buy_now/img3__@2x.png 2x
-          "
-          src="./images/modal_buy_now/img3__@x1.png"
-          alt=" milkshake"
-        />
-        <span class="products__name">milkshake</span>
+        <label>
+          <img
+            class="products__img"
+            srcset="
+              ./images/modal_buy_now/img3__@x1.png 1x,
+              ./images/modal_buy_now/img3__@2x.png 2x
+            "
+            src="./images/modal_buy_now/img3__@x1.png"
+            alt=" milkshake"
+          />
+          <span class="products__name">milkshake</span>
+        </label>
       </li>
     </ul>
     <ul class="input__by_now">
@@ -217,7 +223,7 @@
 </div>
 
 <!-- Модалкa Buy now -->
-<div class="modal" data-modal="modal_buy_now">
+<div class="modal modal_bynow" data-modal="modal_buy_now">
   <svg class="modal__cross js-modal-close">
     <use href="./images/icons.svg#modal-close"></use>
   </svg>
@@ -227,8 +233,8 @@
     <strong class="strong__title"> Buy now</strong>
     <ul class="products">
       <li class="products__list ice__cream">
-        <label>
-          <input class="hidden" type="checkbox" />
+        <label ">
+          <input class="hidden" type="checkbox"  id="ice__cream"/>
           <img
             class="products__img"
             srcset="
@@ -242,8 +248,8 @@
         </label>
       </li>
       <li class="products__list ice__coffee">
-        <label>
-          <input class="hidden" type="checkbox" />
+        <label >
+          <input class="hidden" type="checkbox"  id="ice__coffee" checked />
           <img
             class="products__img"
             srcset="
@@ -257,8 +263,8 @@
         </label>
       </li>
       <li class="products__list milkshake">
-        <label>
-          <input class="hidden" type="checkbox" />
+        <label >
+          <input class="hidden" type="checkbox"  id="milkshake"/>
           <img
             class="products__img"
             srcset="
@@ -272,7 +278,7 @@
         </label>
       </li>
     </ul>
-    <ul>
+    <ul class="input__bynow">
       <li class="input__products">
         <input
           type="text"
@@ -282,17 +288,23 @@
           cols="30"
           rows="10"
           placeholder="Name"
+          required
+          pattern="[A-Za-z0-9_]"       
+          minlength="4" maxlength="20" size="10"
         />
       </li>
       <li class="input__products">
         <input
-          type="text"
+          type="tel"
           class="input__modal"
           name="phone "
           id="phone"
           cols="30"
           rows="10"
           placeholder="Phone"
+          required
+          minlength="4" maxlength="20" size="10"
+          pattern="[0-9]"
         />
       </li>
       <li class="textarea__products">
