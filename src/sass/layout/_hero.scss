@@ -145,10 +145,9 @@
   display: block;
   position: absolute;
   bottom: -50px;
-  left: 45%;
+  left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
-
 
   @media screen and (min-width: 768px) {
     display: block;
@@ -168,23 +167,23 @@
 .hero__img--ice {
   position: absolute;
   display: block;
-  bottom: -1px;
-  left: 45%;
+  bottom: 0;
+  left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
   animation: ice 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @keyframes ice {
-    0%{
+    0% {
       scale: 0.5;
     }
-    50%{
+    50% {
       scale: 1.5;
     }
-    75%{
+    75% {
       scale: 1.5;
     }
-    100%{
+    100% {
       scale: 1;
     }
   }
@@ -193,8 +192,13 @@
 
   @media screen and (min-width: 768px) {
     transform: translateX(0);
+    bottom: -1px;
+
     left: unset;
     right: 93px;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: 0;
   }
 }
 .hero_subsidiary {
@@ -211,16 +215,16 @@
     right: 15px;
 
     @keyframes ice {
-      0%{
+      0% {
         scale: 0.5;
       }
-      50%{
+      50% {
         scale: 1.25;
       }
-      75%{
+      75% {
         scale: 1.25;
       }
-      100%{
+      100% {
         scale: 1;
       }
     }
@@ -306,7 +310,6 @@
     &:hover .hero__icon--default {
       fill: transparent;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     }
     &:hover .hero__icon--hover {
       fill: var(--secondary-text-color);
@@ -315,16 +318,13 @@
       fill: transparent;
       // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     }
     &:focus .hero__icon--hover {
       fill: transparent;
 
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     }
     &:focus .hero__icon--focus {
-
       fill: var(--secondary-text-color);
     }
     &:focus {
