@@ -4,34 +4,49 @@
   background-size: contain;
   background-position: bottom;
   background-image: url('../images/hero/bg-image/mobile/frame-328@2x.png');
-  
+
   @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
     & {
       background-image: url('../images/hero/bg-image/mobile/frame-328@3x.png');
     }
   }
 
-  @media screen and (min-width: 768px) {
-    background-image: url('../images/hero/bg-image/tablet/bg-768@.png');
+  &__container {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-image: url('../images/hero/bg-image/mobile/frame-328@2x.png');
 
     @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/hero/bg-image/mobile/frame-328@3x.png');
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/hero/bg-image/tablet/bg-768@.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/hero/bg-image/tablet/bg-768@2x.png');
+        & {
+          background-image: url('../images/hero/bg-image/tablet/bg-768@2x.png');
+        }
       }
-        }
-        }
+    }
   }
 
   @media screen and (min-width: 1200px) {
     background-image: url('../images/hero/bg-image/desktop/bg-desktop@.png');
 
     @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
       & {
         background-image: url('../images/hero/bg-image/desktop/bg-desktop@2x.png');
       }
@@ -60,6 +75,7 @@
     padding-top: 30px;
     margin-bottom: 20px;
   }
+
   @media screen and (min-width: 1200px) {
     font-size: 38px;
     line-height: calc(48 / 38);
@@ -78,6 +94,7 @@
       font-size: 24px;
       line-height: calc(13 / 24);
     }
+
     @media screen and (min-width: 1200px) {
       font-size: 38px;
       line-height: calc(48 / 38);
@@ -85,6 +102,7 @@
     }
   }
 }
+
 .hero__list {
   display: flex;
   gap: 10px;
@@ -101,6 +119,7 @@
     margin-bottom: 110px;
   }
 }
+
 .hero__link--left {
   // display: block;
   // background-color: transparent;
@@ -122,6 +141,7 @@
     padding: 10px 32px;
   }
 }
+
 .hero__link--right {
   // background-color: transparent;
   border: 0;
@@ -164,6 +184,7 @@
     min-width: 477px;
   }
 }
+
 .hero__img--ice {
   position: absolute;
   display: block;
@@ -177,12 +198,15 @@
     0% {
       scale: 0.5;
     }
+
     50% {
       scale: 1.5;
     }
+
     75% {
       scale: 1.5;
     }
+
     100% {
       scale: 1;
     }
@@ -195,10 +219,12 @@
     left: unset;
     right: 93px;
   }
+
   @media screen and (min-width: 1200px) {
     bottom: 0;
   }
 }
+
 .hero_subsidiary {
   display: none;
 
@@ -208,6 +234,7 @@
     top: 20px;
     right: 32px;
   }
+
   @media screen and (min-width: 1200px) {
     top: 50px;
     right: 15px;
@@ -216,21 +243,26 @@
       0% {
         scale: 0.5;
       }
+
       50% {
         scale: 1.25;
       }
+
       75% {
         scale: 1.25;
       }
+
       100% {
         scale: 1;
       }
     }
   }
 }
+
 .hero__sibsidiary__item {
   text-align: right;
 }
+
 .hero__sibsidiary__number {
   font-family: 'Montserrat';
   font-weight: 900;
@@ -243,6 +275,7 @@
     line-height: calc(56 / 46);
   }
 }
+
 .hero__sibsidiary__desc {
   font-family: 'Montserrat';
   font-size: 8px;
@@ -254,6 +287,7 @@
     line-height: calc(17 / 14);
   }
 }
+
 .hero__box {
   position: relative;
   display: none;
@@ -281,6 +315,7 @@
 
 .hero__icon {
   display: none;
+
   @media screen and (min-width: 768px) {
     display: block;
     position: absolute;
@@ -299,35 +334,43 @@
       fill: transparent;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     & .hero__icon--hover {
       fill: transparent;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     &:hover .hero__icon--default {
       fill: transparent;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     &:hover .hero__icon--hover {
       fill: var(--secondary-text-color);
     }
+
     &:focus .hero__icon--default {
       fill: transparent;
       // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     &:focus .hero__icon--hover {
       fill: transparent;
 
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     &:focus .hero__icon--focus {
       fill: var(--secondary-text-color);
     }
+
     &:focus {
       padding: 12.5px 5px;
     }
   }
 }
+
 .hero__icon--default {
   fill: var(--secondary-text-color);
 }
@@ -339,6 +382,7 @@
     left: -185px;
     min-width: 152px;
   }
+
   @media screen and (min-width: 1200px) {
     min-width: 225px;
     top: -67px;
