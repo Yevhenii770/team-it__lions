@@ -9,18 +9,18 @@
 <!-- Елементи для виклику модальних вікон: посилання чи кнопка. У кожного елемента має бути клас "js-open-modal" і атрибут data-modal="hero-modal"(тут ставиться унікальна назва, наприклад, hero-modal, products-modal і т.д.). Клас open-modal для стилізації кнопок, може бути свій інший. -->
 
 <!-- Відкриття модалки секції Hero -->
-<a href="#" class="open-modal js-open-modal" data-modal="hero">Buy now</a>
+<!-- <a href="#" class="open-modal js-open-modal" data-modal="hero">Buy now</a> -->
 
 <!-- Розмітка модальних вікон, ставиться в кінці вашої секції. Клас "modal" використовується для стилізації модального вікна в SASS. Атрибут data-modal="hero" має таку ж назву, як і кнопка його визову -->
 
 <!-- Модалка секції Hero -->
-<!-- <div class="modal modal--other-paddings-54" data-modal="hero">
+<div class="modal modal--other-paddings-54" data-modal="hero">
   <svg class="modal__cross js-modal-close">
     <use href="./images/icons.svg#modal-close"></use>
-  </svg> -->
+  </svg>
 
 <!-- Далі йде розмітка вашого модального вікна -->
-<!-- <form class="reg-form" name="reg-form" autocomplete="off">
+<form class="reg-form" name="reg-form" autocomplete="off">
     <strong class="strong__title"> Buy now</strong>
     <ul class="products">
       <li class="products__list ice__cream">
@@ -97,17 +97,130 @@
       <button class="btn__about__mod" type="submit">Submit</button>
     </div>
   </form>
-</div> -->
+</div>
 
-<!--Модалка секції Products -->
-<div class="modal modal--other-paddings-40" data-modal="products">
-  <svg class="modal__cross js-modal-close">
+<!--Модалка секції Products -->   
+  <div class="modal ingr-modal" data-modal="products">
+
+    <svg class="modal__cross js-modal-close">
     <use href="./images/icons.svg#modal-close"></use>
   </svg>
+    <h2 class="form__header ingr-form__header">Chololate icecream</h2>
+    <div class="ingr-form__wrap">
+      <div class="ingr-form__box">
+        <img
+          class="ingr-form__img"
+          srcset="
+            ./images/ingredients-modal/ingredientsmodal@1x.jpg 1x
+            ./images/ingredients-modal/ingredientsmodal@2x.jpg 2x
+          "
+          src="./images/ingredients-modal/ingredientsmodal@1x.jpg"
+          alt="three different ice creams"
+        />
+      </div>
+    </div>
+    <ul class="ingr-form__group">
+      <li class="ingr-form__item">
+        <div class="ingr-form__amount">320</div>
+        kcal
+      </li>
+      <li class="ingr-form__item">
+        <div class="ingr-form__amount">4g</div>
+        Prote...
+      </li>
+      <li class="ingr-form__item">
+        <div class="ingr-form__amount">8,2g</div>
+        Fats
+      </li>
+      <li class="ingr-form__item">
+        <div class="ingr-form__amount">40,4g</div>
+        Carbs
+      </li>
+    </ul>
+    <h3 class="ingr-form__subtitle">Ingredients</h3>
+    <ul class="ingridients__names">
+      <li class="ingridients__list">
+        <span> Milk</span>
+        <span>100ml</span>
+      </li>
+      <li class="ingridients__list">
+        <span> Belgian chocolate</span>
+        <span>20g</span>
+      </li>
+      <li class="ingridients__list">
+        <span>Cream</span>
+        <span>150 ml</span>
+      </li>
+      <li class="ingridients__list">
+        <span>Cocoa powder</span>
+        <span>30g</span>
+      </li>
+      <li class="ingridients__list">
+        <span>Sugar</span>
+        <span>40g</span>
+      </li>
+      <li class="ingridients__list">
+        <span>Vanilla sugar</span>
+        <span>10g</span>
+      </li>
+    </ul>
+    <form class="form">
+      <div class="form__field">
+        <input
+          class="form__input"
+          type="text"
+          id="ingr-1-name"
+          name="user-name"
+          placeholder="Alan Black"
+          required
+          pattern="^[a-zA-Z]+"
+          title="Name must be only one word."
+        />
+        <label class="form__label-text" for="ingr-1-name">Name*</label>
+      </div>
+
+      <div class="form__field">
+        <input
+          class="form__input"
+          type="tel"
+          id="ingr-1-tel"
+          name="phone-number"
+          placeholder="+380-1111111111"
+          required
+          pattern="^(?=.*\d)(?!.*\s).*$"
+          title="Must be only phone-number."
+        />
+        <label class="form__label-text" for="ingr-1-tel">Phone*</label>
+      </div>
+
+      <div class="form__field">
+        <textarea
+          class="form__textarea"
+          name="coment"
+          id="ingr-1-message"
+          rows="2"
+          placeholder="&#160;"
+        ></textarea>
+        <label
+          class="form__label-text form__label-text--message"
+          for="ingr-1-message"
+          >Comment</label
+        >
+      </div>
+
+      <button class="form__btn" type="submit" data-mobile-buy-open>
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+
+
+
 
   <!-- Далі йде розмітка вашого модального вікна -->
-  <p>Products</p>
-</div>
+  
 
 <!-- Модалка секції About -->
 <div class="modal" data-modal="about">
