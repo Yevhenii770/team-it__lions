@@ -260,8 +260,6 @@
   min-height: 42px;
   position: relative;
 
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
@@ -325,15 +323,6 @@
     border-color: #ababab;
     color: var(--primary-text-color);
   }
-}
-
-.contacts-button__desc {
-  font-family: 'Montserrat';
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.29;
-  align-items: center;
-  text-align: center;
 }
 
 .contacts-button__icon {
