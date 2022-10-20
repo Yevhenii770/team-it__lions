@@ -140,3 +140,21 @@
     margin-bottom: 32px;
   }
 }
+
+.map-button {
+  padding: 12px 34px;
+  display: inline-block;
+  border-radius: 10px;
+
+  color: var(--primary-text-color);
+  background-color: var(--btn-color);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.map-button:hover,
+.map-button:focus {
+  background-color: var(--green-color-btn);
+}
