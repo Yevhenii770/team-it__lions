@@ -30,7 +30,9 @@
     margin-bottom: 40px;
   }
 }
-
+.active {
+  z-index: 102;
+}
 .products__list {
   width: 132px;
   height: 136px;
