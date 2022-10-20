@@ -30,7 +30,6 @@
   visibility: hidden;
 
   width: 280px;
-
   position: fixed;
   top: 50%;
   left: 50%;
@@ -67,6 +66,7 @@
 
   &.active {
     opacity: 1;
+    z-index: 1000;
     visibility: visible;
     transform: translate(-50%, -50%) scale(1) rotateX(360deg);
   }
