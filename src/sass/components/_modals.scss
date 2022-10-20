@@ -30,7 +30,6 @@
   visibility: hidden;
 
   width: 280px;
-
   position: fixed;
   top: 50%;
   left: 50%;
@@ -67,6 +66,7 @@
 
   &.active {
     opacity: 1;
+    z-index: 1000;
     visibility: visible;
     transform: translate(-50%, -50%) scale(1) rotateX(360deg);
   }
@@ -110,5 +110,33 @@
     margin-bottom: 32px;
     font-size: 16px;
     line-height: calc(22 / 16);
+  }
+}
+.modal__map {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 24px;
+
+  width: 224px;
+  height: 199px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 260px;
+    margin-bottom: 32px;
+  }
+}
+
+.title-locations {
+  text-align: center;
+  font-family: 'Seymour One';
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  margin-bottom: 20px;
+
+  @media screen and(min-width:768px) {
+    font-size: 20px;
+    line-height: calc(28 / 20);
+    margin-bottom: 32px;
   }
 }

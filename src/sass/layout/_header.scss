@@ -1,11 +1,11 @@
 .header {
+  background-color: var(--bac-color-green);
   &-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--bac-color-green);
-    border-bottom: solid var(--bac-color-green);
+  
 
     @media screen and(min-width:1200px) {
       max-width: 1200px;
@@ -97,7 +97,18 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 12px 34px;
+  &:hover,
+    &:focus {
+      background-color: #0A8817;
+    }
+  
+                                 &:focus>.btn-text,
+                                 &:focus>.btn-icon {
+                                   fill: (var(--secondary-text-color));
+                                   color: (var(--secondary-text-color));
+    }
 }
 
 .btn-text {
@@ -108,18 +119,11 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-
-  &:after {
-    content: "";
-    display: block;
-    width: 12px;
-    height: 12px;
-    margin-left: 7px;
-    // outline: 1px solid red;
-    // background-image: url(./Frame-45.svg);
-  }
 }
 
+.btn-icon {
+  margin-left: 7px;
+}
 .btns {
   display: flex;
   flex-direction: row;
