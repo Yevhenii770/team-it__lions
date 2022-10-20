@@ -37,7 +37,7 @@
   z-index: 30; /* повинен бути більше бекдропа*/
   text-align: center;
   padding: 28px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--btn-color);
   border-radius: 10px;
   background-color: var(--secondary-text-color);
   transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),

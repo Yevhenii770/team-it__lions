@@ -1,5 +1,5 @@
 .slider {
-  top: -860px;
+  top: -780px;
   text-align: center;
   font-size: 12px;
   line-height: calc(31 / 12);
@@ -7,14 +7,14 @@
   color: var(--secondary-text-color);
 
   @media screen and (min-width: 768px) {
-    top: -735px;
+    top: -720px;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(26 / 14);
   }
 
   @media screen and (min-width: 1200px) {
-    top: -570px;
+    top: -520px;
     font-size: 16px;
     line-height: calc(30 / 16);
   }
