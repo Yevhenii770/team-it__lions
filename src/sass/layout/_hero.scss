@@ -1,63 +1,45 @@
 .hero {
   background-color: var(--bac-color-green);
-
 }
 .hero__container {
   position: relative;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  background-image: url('../images/hero/bg-image/mobile/frame-328@2x.png');
-
-  @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    & {
-      background-image: url('../images/hero/bg-image/mobile/frame-328@3x.png');
-    }
-  }
-
-  &__container {
-    position: relative;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    background-image: url('../images/hero/bg-image/mobile/frame-328@2x.png');
-
+    background-image: url('../images/hero/bg-image/mobile/frame-328@.png');
+  
     @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/hero/bg-image/mobile/frame-328@3x.png');
-      }
-    }
-
-    @media screen and (min-width: 768px) {
-      background-image: url('../images/hero/bg-image/tablet/bg-768@.png');
-
-      @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/hero/bg-image/mobile/frame-328@2x.png');
+      }
+    }
+  
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/hero/bg-image/tablet/bg-768@.png');
+  
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
         & {
           background-image: url('../images/hero/bg-image/tablet/bg-768@2x.png');
         }
       }
     }
-  }
-
-  @media screen and (min-width: 1200px) {
-    background-image: url('../images/hero/bg-image/desktop/bg-desktop@.png');
-
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-      & {
-        background-image: url('../images/hero/bg-image/desktop/bg-desktop@2x.png');
+  
+    @media screen and (min-width: 1200px) {
+      background-image: url('../images/hero/bg-image/desktop/bg-desktop@.png');
+  
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        & {
+          background-image: url('../images/hero/bg-image/desktop/bg-desktop@2x.png');
+        }
       }
-    }
-  }
 }
-
+}
 .hero__title {
   display: block;
   font-family: 'Seymour One', sans-serif;
