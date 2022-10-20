@@ -454,6 +454,36 @@ body {
   }
 }
 
+.modal__map {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  width: 224px;
+  height: 199px;
+}
+@media screen and (min-width: 768px) {
+  .modal__map {
+    width: 448px;
+    height: 260px;
+    margin-bottom: 32px;
+  }
+}
+
+.title-locations {
+  text-align: center;
+  font-family: "Seymour One";
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .title-locations {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+}
+
 /**
   |============================
   | layouts
@@ -587,8 +617,11 @@ body {
   }
 }
 
-.hero__container {
+.hero {
   background-color: var(--bac-color-green);
+}
+
+.hero__container {
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1598,6 +1631,7 @@ body {
 
 .advantages {
   text-align: center;
+  background-color: var(--bac-color-green);
 }
 .advantages__wrap {
   padding-left: 45px;
@@ -1776,6 +1810,10 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.contacts {
+  background-color: var(--bac-color-green);
 }
 
 .contacts-set {
@@ -2080,6 +2118,7 @@ body {
 }
 
 .footer {
+  background-color: var(--bac-color-green);
   padding-bottom: 62px;
 }
 @media screen and (min-width: 768px) {
@@ -2148,9 +2187,6 @@ body {
   text-align: center;
 }
 
-.footer__all {
-  background-color: var(--bac-color-green);
-}
 @media screen and (min-width: 320px) {
   .footer__all {
     padding-top: 40px;
@@ -2423,6 +2459,7 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .btn__about__mod {
@@ -2430,6 +2467,11 @@ body {
     line-height: 1.2142857143;
     width: 121px;
   }
+}
+
+.btn__about__mod:hover,
+.btn__about__mod:focus {
+  background-color: var(--green-color-btn);
 }
 
 @media screen and (min-width: 768px) {
