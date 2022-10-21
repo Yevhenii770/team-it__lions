@@ -1,6 +1,7 @@
 .about {
     text-align: center;
     background-color: var(--bac-color-green);
+    padding-top: 60px;
     
         @media screen and (min-width: 768px) {
             padding-left: 34px;
@@ -23,7 +24,6 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--secondary-text-color);
-    padding-top: 60px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 12px;
@@ -69,7 +69,6 @@
     display: inline-block;
     z-index: 20;
     position: relative;
-    margin-bottom: 40px;
     width: 278px;
     height: 278px;
 
@@ -115,15 +114,13 @@
 }
 
 .about__list {
-    padding-left: 50px;
-    padding-right: 50px;
-
     @media screen and (min-width: 768px) {
         padding: 0;
     }
 }
 
 .about__item {
+    max-width: 220px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -132,14 +129,18 @@
     letter-spacing: 0.04em;
     color: var(--secondary-text-color);
     margin-bottom: 4px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 768px) {
         margin-bottom: 8px;
         text-align: left;
+        max-width: 334px;
     }
 
     @media screen and (min-width: 1200px) {
         font-size: 16px;
+        max-width: 463px;
     }
 
     &:last-child {
@@ -179,6 +180,8 @@
     justify-content: center;
     gap: 5px;
 
+    transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width: 768px) {
         margin-top: 60px;
         margin-left: 0;
@@ -190,13 +193,11 @@
 
     &:hover {
         background-color: (var(--green-color-btn));
-        transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &:focus {
         background-color: (var(--green-color-btn));
         color: (var(--secondary-text-color));
-        transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 }
@@ -215,4 +216,8 @@
 .about__icon:focus {
     fill: white;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about__image {
+    margin-bottom: 40px;
 }
