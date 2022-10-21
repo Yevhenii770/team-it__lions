@@ -98,7 +98,8 @@
 }
 
 // Стилі тексту описання
-.modal__desc {
+.modal__desc,
+.modal_about-desc {
   margin-top: 20px;
   margin-bottom: 24px;
   text-align: left;
@@ -110,6 +111,15 @@
     margin-bottom: 32px;
     font-size: 16px;
     line-height: calc(22 / 16);
+  }
+}
+.modal__about-video {
+  width: 224px;
+  height: 199px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 205px;
   }
 }
 .modal__map {
@@ -127,7 +137,8 @@
   }
 }
 
-.title-locations {
+.title-locations,
+.modal__about-title {
   text-align: center;
   font-family: 'Seymour One';
   font-size: 16px;

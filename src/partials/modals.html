@@ -223,13 +223,24 @@
   
 
 <!-- Модалка секції About -->
-<div class="modal" data-modal="about">
+<div class="modal about_modal" data-modal="about-modal">
   <svg class="modal__cross js-modal-close">
     <use href="./images/icons.svg#modal-close"></use>
   </svg>
 
   <!-- Далі йде розмітка вашого модального вікна -->
-  <p>How it’s made?</p>
+  <p class="modal__about-title">How it’s made?</p>
+
+  <div class="modal_div_about-video">
+    <iframe  class="modal__about-video"
+    src="https://www.youtube.com/embed/hO-7cz7gyAY" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+  </div>
+  <p class="modal_about-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+  </p>
 </div>
 
 <!-- Модалки секції Contacts -->

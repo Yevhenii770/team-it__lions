@@ -26,11 +26,13 @@
 
   &:hover {
     color: var(--accent-color);
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:focus {
     color: #0A8817;
     text-decoration: underline;
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:disabled {
@@ -102,12 +104,14 @@
   &:hover,
     &:focus {
       background-color: #0A8817;
+      transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   
-                                 &:focus>.btn-text,
-                                 &:focus>.btn-icon {
-                                   fill: (var(--secondary-text-color));
-                                   color: (var(--secondary-text-color));
+                &:focus>.btn-text,
+                &:focus>.btn-icon {
+                  fill: (var(--secondary-text-color));
+                  color: (var(--secondary-text-color));
+      transition: fill color 500ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
