@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: space-between;
   
-
     @media screen and(min-width:1200px) {
       max-width: 1200px;
     }
@@ -23,22 +22,21 @@
 .nav-link {
   display: block;
   color: var(--secondary-text-color);
-
+transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    color: var(--accent-color);
-    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
+      color: var(--accent-color);
+    
   &:focus {
     color: #0A8817;
     text-decoration: underline;
-    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
 
   &:disabled {
     color: var(--gray-color);
     text-decoration: underline;
   }
+}
 }
 
 // logo-styles
@@ -101,10 +99,11 @@
   justify-content: center;
   align-items: center;
   padding: 12px 34px;
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
     &:focus {
       background-color: #0A8817;
-      transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+      
     }
   
                 &:focus>.btn-text,
@@ -143,9 +142,10 @@
     display: none;
   }
 
-  &-btn {
-    @media screen and(max-width: 480px) {
-      display: none;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                &-btn {
+    display: none;
+    @media screen and(min-width: 768px) {
+        display: flex;
     }
   }
 }

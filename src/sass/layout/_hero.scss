@@ -1,5 +1,13 @@
 .hero {
+  padding-top: 40px;
   background-color: var(--bac-color-green);
+@media screen and (min-width: 768px) {
+    padding-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 35px;
+  }
 }
 .hero__container {
   position: relative;
@@ -50,7 +58,6 @@
   color: var(--secondary-text-color);
 
   max-width: 250px;
-  padding-top: 40px;
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
@@ -58,7 +65,6 @@
     line-height: calc(23 / 18);
 
     max-width: 180px;
-    padding-top: 30px;
     margin-bottom: 20px;
   }
 
@@ -68,7 +74,6 @@
     letter-spacing: 0.04em;
 
     max-width: 367px;
-    padding-top: 35px;
     margin-bottom: 30px;
   }
 
@@ -120,12 +125,21 @@
   padding: 5.5px 12px;
   color: var(--primary-text-color);
   // cursor: pointer;
-
+transition: color border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: calc(18 / 14);
     padding: 10px 32px;
   }
+ &:hover {
+   border-color: var(--green-color-btn);
+   color: var(--primary-text-color);
+ }
+
+ &:focus {
+   border-color: var(--btn-color);
+   color: var(--secondary-text-color);
+ }
 }
 
 .hero__link--right {
@@ -145,6 +159,15 @@
     line-height: calc(17 / 14);
     padding: 11px 22px;
   }
+        &:hover {
+          color: var(--green-color-btn);
+    
+        }
+    
+        &:focus {
+    
+          color: var(--secondary-text-color);
+        }
 }
 
 .hero__img--fog {
@@ -337,7 +360,6 @@
 
     &:focus .hero__icon--default {
       fill: transparent;
-      // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
