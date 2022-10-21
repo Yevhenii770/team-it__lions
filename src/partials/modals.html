@@ -390,27 +390,31 @@
         </label>
       </li>
     </ul>
-    <ul>
+    <ul class="input__by__now">
       <li class="input__products">
         <input
-          type="text"
+          type="name"
           class="input__modal"
           name="name "
           id="name"
-          cols="30"
-          rows="10"
           placeholder="Name"
+          
+       minlength="4" maxlength="20" size="20"
+       value=""
         />
       </li>
       <li class="input__products">
         <input
-          type="text"
+          type="tel"
           class="input__modal"
           name="phone "
           id="phone"
-          cols="30"
           rows="10"
-          placeholder="Phone"
+          placeholder="067 123 1234"
+          pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+          minlength="0"
+          maxlength="12"
+          value=""
         />
       </li>
       <li class="textarea__products">
@@ -418,7 +422,6 @@
           class="textarea__modal"
           name="comment "
           id="comment"
-          cols="30"
           rows="10"
           placeholder="Comment"
         ></textarea>
