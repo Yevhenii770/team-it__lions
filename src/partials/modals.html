@@ -20,12 +20,13 @@
   </svg>
 
   <!-- Далі йде розмітка вашого модального вікна -->
-  <form class="reg-form" name="reg-form" autocomplete="off">
+  <!-- <form class="reg-form" name="reg-form" autocomplete="off">
     <strong class="strong__title"> Buy now</strong>
     <ul class="products">
       <li class="products__list ice__cream">
         <label>
-          <input class="hidden" type="checkbox">
+          <input class="hidden by__now__checkbox" type="checkbox"
+          name="checkbox" value="checkbox">
           <img
             class="products__img"
             srcset="
@@ -35,13 +36,14 @@
             src="./images/modal_buy_now/img1__@x1.png"
             alt=" ice cream"
           />
-
           <span class="products__name">ice cream</span>
         </label>
       </li>
       <li class="products__list ice__coffee">
         <label >
-          <input class="hidden" type="checkbox">
+          <input class="hidden by__now__checkbox" type="checkbox"
+            name="checkbox" value="checkbox"
+          >         
           <img
             class="products__img"
             srcset="
@@ -56,6 +58,8 @@
       </li>
       <li class="products__list milkshake">
         <label>
+          <input class="hidden by__now__checkbox" type="checkbox" name="checkbox" value="checkbox">
+
           <img
             class="products__img"
             srcset="
@@ -102,7 +106,7 @@
     <div>
       <button class="btn__about__mod" type="submit">Submit</button>
     </div>
-  </form>
+  </form> -->
 </div>
 
 <!--Модалка секції Products -->
@@ -134,7 +138,7 @@
   <!-- Далі йде розмітка вашого модального вікна -->
   <p class="title">Our Locations</p>
 
-  <div class="">
+  <div >
     <iframe
       class="modal__map"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059729384!2d-74.25986816097694!3d40.69714941285065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2snl!4v1666204667835!5m2!1sen!2snl"
@@ -212,8 +216,7 @@
       <textarea
         class="textarea__modal"
         name="comment"
-        cols="30"
-        rows="10"
+       
         placeholder="Comment"
       >
       </textarea>
@@ -233,8 +236,8 @@
     <strong class="strong__title"> Buy now</strong>
     <ul class="products">
       <li class="products__list ice__cream">
-        <label ">
-          <input class="hidden" type="checkbox"  id="ice__cream"/>
+        <label >
+          <input class="hidden checkbox__products" type="checkbox"  id="ice__cream"/>
           <img
             class="products__img"
             srcset="
@@ -244,12 +247,12 @@
             src="./images/modal_buy_now/img1__@x1.png"
             alt=" ice cream"
           />
-          <span class="products__name">ice cream</span>
+          <span class="products__name ice__cream__name">ice cream</span>
         </label>
       </li>
       <li class="products__list ice__coffee">
         <label >
-          <input class="hidden" type="checkbox"  id="ice__coffee" checked />
+          <input class="hidden checkbox__products" type="checkbox"  id="ice__coffee" checked />
           <img
             class="products__img"
             srcset="
@@ -259,12 +262,12 @@
             src="./images/modal_buy_now/img2__@x1.png"
             alt=" ice coffee"
           />
-          <span class="products__name">ice coffee</span>
+          <span class="products__name ice__coffee__name">ice coffee</span>
         </label>
       </li>
       <li class="products__list milkshake">
         <label >
-          <input class="hidden" type="checkbox"  id="milkshake"/>
+          <input class="hidden checkbox__products" type="checkbox"  id="milkshake"/>
           <img
             class="products__img"
             srcset="
@@ -274,7 +277,7 @@
             src="./images/modal_buy_now/img3__@x1.png"
             alt=" milkshake"
           />
-          <span class="products__name">milkshake</span>
+          <span class="products__name milkshake__name">milkshake</span>
         </label>
       </li>
     </ul>
@@ -285,11 +288,10 @@
           class="input__modal"
           name="name "
           id="name"
-          cols="30"
-          rows="10"
+          
           placeholder="Name"
           required
-          pattern="[A-Za-z0-9_]"       
+          pattern="[A-Za-z]"       
           minlength="4" maxlength="20" size="10"
         />
       </li>
@@ -299,8 +301,7 @@
           class="input__modal"
           name="phone "
           id="phone"
-          cols="30"
-          rows="10"
+          
           placeholder="Phone"
           required
           minlength="4" maxlength="20" size="10"
@@ -312,8 +313,7 @@
           class="textarea__modal"
           name="comment "
           id="comment"
-          cols="30"
-          rows="10"
+         
           placeholder="Comment"
         ></textarea>
       </li>

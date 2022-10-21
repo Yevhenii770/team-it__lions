@@ -80,6 +80,9 @@
   --btn-color: #f8d24e;
   --gray-color: #7a7a7a;
   --slider-dot-color: #d9d9d9;
+  --ice__cream: #96af8c;
+  --ice__coffee: #efd478;
+  --milkshake: #d6936d;
 }
 
 h1,
@@ -2372,26 +2375,52 @@ body {
 .products__list:hover, .products__list:focus {
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
 }
+.products__list:nth-child(1)::after {
+  content: "";
+  z-index: 10;
+}
+.products__list:nth-child(2)::after {
+  content: "";
+  z-index: 10;
+  background: linear-gradient(0deg rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+}
+.products__list:nth-child(3)::after {
+  content: "";
+  z-index: 10;
+}
 
 .ice__cream {
-  border: 2px solid #96af8c;
-}
-.ice__cream:checked {
-  background: #96af8c;
+  border: 2px solid var(--ice__cream);
 }
 
 .ice__coffee {
-  border: 2px solid #efd478;
+  border: 2px solid var(--ice__coffee);
 }
-.ice__coffee:focus {
-  background: #efd478;
+.ice__coffee:checked {
+  background: var(--ice__coffee);
+}
+
+.ice__cream:has(figcaption) {
+  background-color: var(--ice__coffee);
+}
+
+.checkbox__products:checked ~ .ice__cream__name {
+  background-color: var(--ice__cream);
+}
+
+.checkbox__products:checked ~ .ice__coffee__name {
+  background-color: var(--ice__coffee);
+}
+
+.checkbox__products:checked ~ .milkshake__name {
+  background-color: var(--milkshake);
 }
 
 .milkshake {
-  border: 2px solid #d6936d;
+  border: 2px solid var(--milkshake);
 }
 .milkshake:focus {
-  background: #d6936d;
+  background: var(--milkshake);
 }
 
 .products__img {
