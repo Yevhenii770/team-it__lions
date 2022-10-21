@@ -29,7 +29,6 @@
   opacity: 0;
   visibility: hidden;
 
-  height: 95%;
   width: 280px;
   position: fixed;
   top: 50%;
@@ -75,6 +74,11 @@
   }
 }
 
+.height-95 {
+  max-height: 90vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
 /* Стилі кнопки закриття */
 
 .modal__cross {
