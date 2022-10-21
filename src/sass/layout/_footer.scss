@@ -70,17 +70,6 @@
   }
 }
 
-.footer__all {
-  @media screen and (min-width: 768px) {
-    padding-top: 40px;
-    padding-bottom: 13px;
-    @media screen and (min-width: 1200px) {
-      padding-top: 120px;
-      padding-bottom: 11px;
-    }
-  }
-}
-
 .footer__number {
   font-weight: 700;
   font-size: 12px;
