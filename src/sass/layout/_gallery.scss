@@ -1,6 +1,6 @@
 .gallery {
   max-width: 767px;
-  height: 1050px;
+  height: 940px;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -45,18 +45,18 @@
   }
 
   &__img {
-    display: block;
-    width: 100%;
-    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
     border-radius: 7px;
+    width: 279px;
 
     @media screen and (min-width: 768px) {
       border-radius: 18px;
+      width: 704px;
     }
 
     @media screen and (min-width: 1200px) {
       width: 1013px;
-      margin: 0 auto;
       border-radius: 24px;
     }
   }
