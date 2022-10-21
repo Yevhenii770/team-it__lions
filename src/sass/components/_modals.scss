@@ -79,6 +79,31 @@
   overflow: scroll;
   overflow-x: hidden;
 }
+
+.height-95::-webkit-scrollbar {
+  width: 10px;
+}
+
+.height-95::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+.height-95::-webkit-scrollbar-thumb {
+  background-color: var(--btn-color);
+  border-radius: 10px;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.25) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.25) 75%,
+    transparent 75%,
+    transparent
+  );
+}
 /* Стилі кнопки закриття */
 
 .modal__cross {
