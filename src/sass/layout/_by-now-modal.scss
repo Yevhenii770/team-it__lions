@@ -21,7 +21,6 @@
   }
 }
 .strong__title {
-  margin-bottom: 83px;
   display: flex;
   justify-content: center;
   font-family: 'Seymour One';
@@ -31,11 +30,11 @@
   @media screen and(min-width:768px) {
     font-size: 20px;
     line-height: calc(28 / 20);
-    margin-bottom: 103px;
   }
 }
 
 .products {
+  margin-top: 83px;
   display: flex;
   gap: 83px;
   flex-direction: column;
@@ -45,10 +44,13 @@
   @media screen and(min-width:768px) {
     flex-direction: row;
     gap: 32px;
+    margin-top: 103px;
     margin-bottom: 40px;
   }
 }
-
+.active {
+  z-index: 102;
+}
 .products__list {
   width: 132px;
   height: 136px;
@@ -217,6 +219,7 @@
   font-weight: 600;
   font-size: 12px;
   line-height: calc(15 / 12);
+  cursor: pointer;
 
   @media screen and(min-width:768px) {
     font-size: 14px;
@@ -225,6 +228,10 @@
   }
 }
 
+.btn__about__mod:hover,
+.btn__about__mod:focus {
+  background-color: var(--green-color-btn);
+}
 .input__products {
   @media screen and(min-width:768px) {
     display: flex;
