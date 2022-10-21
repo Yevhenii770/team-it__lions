@@ -23,7 +23,6 @@
 }
 
 /* Стилі для всіх модальних вікон*/
-
 .modal {
   /* Ховаємо вікно  */
   opacity: 0;
@@ -50,9 +49,11 @@
   }
 
   &--other-paddings-40 {
+    overflow: scroll;
     padding: 28px 20px;
 
     @media screen and (min-width: 768px) {
+      overflow: inherit;
       padding: 32px 40px;
     }
   }
@@ -97,7 +98,7 @@
   }
 }
 
-// Стилі тексту описання
+// Стилі тексту описання (Franchise&ReadMore)
 .modal__desc {
   margin-top: 20px;
   margin-bottom: 24px;
@@ -112,10 +113,28 @@
     line-height: calc(22 / 16);
   }
 }
+
+// Стилі заголовків
+.modal__title {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Seymour One';
+  font-size: 16px;
+  line-height: calc(24 / 16);
+
+  @media screen and(min-width:768px) {
+    width: 322px;
+    font-size: 20px;
+    line-height: calc(28 / 20);
+  }
+}
+
+// Стилі карти (Our Locations modal)
 .modal__map {
   border: none;
   border-radius: 10px;
   margin-bottom: 24px;
+  margin-top: 20px;
 
   width: 224px;
   height: 199px;
@@ -124,24 +143,11 @@
     width: 448px;
     height: 260px;
     margin-bottom: 32px;
+    margin-top: 32px;
   }
 }
 
-.title-locations {
-  text-align: center;
-  font-family: 'Seymour One';
-  font-size: 16px;
-  line-height: calc(24 / 16);
-  margin-bottom: 20px;
-
-  @media screen and(min-width:768px) {
-    font-size: 20px;
-    line-height: calc(28 / 20);
-    margin-bottom: 32px;
-  }
-}
-
-.map-button {
+.modal__map-button {
   padding: 12px 34px;
   display: inline-block;
   border-radius: 10px;
@@ -149,42 +155,14 @@
   color: var(--primary-text-color);
   background-color: var(--btn-color);
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.map-button:hover,
-.map-button:focus {
-  background-color: var(--green-color-btn);
-}
-
-.ingr-modal {
-  padding: 28px 20px;
-
-  width: 280px;
-
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  @media screen and(min-width:768px) {
-    width: 568px;
-    padding: 32px 40px;
-    overflow: scroll;
-    height: 995px;
+  &:hover,
+  &:focus {
+    background-color: var(--green-color-btn);
   }
 }
 
-.ingr-form__header {
-  font-size: 20px;
-  line-height: calc(28 / 20);
-  margin-bottom: 29px;
-
-  @media screen and(min-width:768px) {
-    margin-bottom: 31px;
-    min-width: none;
-  }
-}
 .ingr-form__wrap {
   position: relative;
   width: 132px;
@@ -298,32 +276,91 @@
   letter-spacing: 0.04em;
 }
 
-.modal-close {
-  position: fixed;
-  top: 8px;
-  right: 8px;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
+// Стилі реєстраційної форми
+.modal__label {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.modal__input {
+  width: 224px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  height: 32px;
+  margin-bottom: 16px;
+  padding: 8px 48px 7px 12px;
+
+  @media screen and(min-width:768px) {
+    margin-bottom: 12px;
+    height: 42px;
+    width: 368px;
+  }
+  &::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--primary-text-color);
+
+    @media screen and(min-width:768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.modal__textarea {
+  width: 224px;
+  height: 64px;
+  outline: transparent;
+  resize: none;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  padding-left: 12px;
+  padding-top: 8px;
+
+  &::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--primary-text-color);
+    @media screen and(min-width:768px) {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and(min-width:768px) {
+    margin-bottom: 32px;
+    width: 368px;
+    height: 84px;
+    font-size: 14px;
+  }
+}
+
+.modal__btn {
+  margin: 0 auto;
+  background: var(--btn-color);
+  border-radius: 10px;
   border: none;
-  @media screen and (min-width: 768px) {
-    top: 20px;
-    right: 20px;
-    width: 20px;
-    height: 20px;
+  width: 114px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  cursor: pointer;
+  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    width: 121px;
   }
   &:hover,
   &:focus {
-    transform: scale(1.5);
-  }
-}
-.modal-close__icon {
-  width: 16px;
-  height: 16px;
-  @media screen and (min-width: 768px) {
-    width: 20px;
-    height: 20px;
+    background-color: var(--green-color-btn);
   }
 }
