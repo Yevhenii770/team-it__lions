@@ -50,11 +50,10 @@
   }
 
   &--other-paddings-40 {
-    overflow: scroll;
+    overflow: auto;
     padding: 28px 20px;
 
     @media screen and (min-width: 768px) {
-      overflow: inherit;
       padding: 32px 40px;
     }
   }
