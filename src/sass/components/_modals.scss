@@ -50,10 +50,11 @@
   }
 
   &--other-paddings-40 {
-    overflow: auto;
+    height: 990px;
     padding: 28px 20px;
 
     @media screen and (min-width: 768px) {
+      height: 995px;
       padding: 32px 40px;
     }
   }
