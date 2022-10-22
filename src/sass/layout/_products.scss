@@ -1,6 +1,9 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   background-image: url(../images/products/product_bcg_sm-@1x.png);
   @media (min-device-pixel-ratio: 2),
