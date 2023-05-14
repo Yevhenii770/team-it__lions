@@ -5,6 +5,6 @@ The benefits of the product are that it simplifies the ice cream ordering proces
 Ice Cream is an innovative project that will help businesses increase their efficiency and attract more customers. We are confident that our site will become an indispensable tool for selling ice cream in the modern world.
 
 ![Image alt](https://github.com/Yevhenii770/team-it__lions/blob/main/Front.jpg)
-![Image alt](https://github.com/team-it__lions/blob/main/F-M.jpg)
+![Image alt](https://github.com/Yevhenii770/team-it__lions/blob/main/F-M.jpg)
 
 
